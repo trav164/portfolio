@@ -4,46 +4,40 @@
 	export let data: PageData;
 </script>
 
-<div class="flex bg-dark justify-center">
-	<div class="w-1/2 h-screen mt-24 mb-24">
-		<!-- HEADER -->
-		<div class="block sm:flex sm:text-center sm:justify-center">
-			<img
-				class="w-24 h-24 rounded-full shadow-xl animate-bounce transition-all duration-1000 ease-in-out cursor-pointer"
-				src="https://api.dicebear.com/5.x/big-ears-neutral/svg?seed=lewis"
-				alt="avatar"
-			/>
-			<div class="block mt-4 ml-4">
-				<h1 class="font-bebas text-3xl text-brand">Lewis Travis</h1>
-				<p class="block italic font-bold -mt-1 text-mid">Full Stack Web Developer</p>
-				<a href="https://www.lewistravis.co.uk" class="block text-mid underline hover:text-brand"
-					>profile</a
-				>
-			</div>
-		</div>
+<!-- 	<img
+		class="w-24 h-24 rounded-full shadow-xl animate-bounce transition-all duration-1000 ease-in-out cursor-pointer"
+		src="https://api.dicebear.com/5.x/big-ears-neutral/svg?seed=lewis"
+		alt="avatar"
+	/> -->
 
-		<!-- ABOUT -->
-		<div class="flex flex-row mt-6">
-			<div class="block mt-4 ml-4">
-				<h1 class="text-brand">about</h1>
-				<p class="block text-light">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates sint quasi iusto
-					alias explicabo necessitatibus? Veniam, tempora maiores eum facere dolorem, animi at
-					perspiciatis suscipit adipisci alias optio, ipsum quae.
-				</p>
+<main>
+	<section class="mx-auto sm:w-1/2">
+		<div class="text-light p-10 pt-20">
+			<div class="flex flex-col items-center">
+				<img
+					class="w-20 h-20 rounded-full animate-bounce transition-all duration-1000"
+					src="https://api.dicebear.com/5.x/big-ears-neutral/svg?seed=lewis"
+					alt="avatar"
+				/>
+				<h2 class="text-4xl font-poppins font-semibold text-light">Lewis Travis</h2>
+				<h3 class="italic flex font-bold text-sm text-brand">Full stack web developer.</h3>
 			</div>
+			<p class="pt-4 text-mid text-center">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis commodi velit tempore quos
+				quod ex, iure error nesciunt voluptatibus repudiandae?
+			</p>
 		</div>
+	</section>
 
-		<!-- EXPERIENCE -->
-		<div class="flex flex-row mt-6">
-			<div class="block mt-4 ml-4">
-				<h1 class="text-brand">experience</h1>
-				<p class="block text-light">
-					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates sint quasi iusto
-					alias explicabo necessitatibus? Veniam, tempora maiores eum facere dolorem, animi at
-					perspiciatis suscipit adipisci alias optio, ipsum quae.
-				</p>
+	<section class="block mx-auto sm:w-1/2">
+		<div class="text-light p-10">
+			<div class="flex flex-col items-center">
+				<h2 class="font-bold text-brand italic">about.</h2>
 			</div>
+			<p class="pt-4 text-mid text-center">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis commodi velit tempore quos
+				quod ex, iure error nesciunt voluptatibus repudiandae?
+			</p>
 		</div>
-	</div>
-</div>
+	</section>
+</main>

@@ -5,12 +5,13 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      'bebas': ['Bebas Neue', 'sans-serif'],
+      'poppins': ['Poppins', 'sans-serif'],
     },
     colors: {
-      brand: "#00B25A",
-      dark: "#2D313F",
-      mid: "#B4BEC5",
+      ...colors,
+      brand: "#E34A32",
+      dark: "#141618",
+      mid: "#BAC1B8",
       light: "#FFFFFF"
     },
     extend: {},
