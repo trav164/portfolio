@@ -19,6 +19,12 @@
 					</div>
 				</div>
 			</div>
+			<!-- <div class="flex flex-col hover:contrast-125 transition-all duration-500">
+				<button
+					class="justify-center py-2 px-4 bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
+					>Contact</button
+				>
+			</div> -->
 		</div>
 	</section>
 
@@ -36,7 +42,7 @@
 		<h3 class="text-light font-semibold">Work Experience</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand w-32">2019 - present</div>
+			<div class="text-light w-32">2019 - present</div>
 			<div class="flex flex-col w-full">
 				<span>Software Engineer – CGI</span>
 				<span class="text-mid">Various Projects</span>
@@ -45,7 +51,7 @@
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand w-32">2017 - 2018</div>
+			<div class="text-light w-32">2017 - 2018</div>
 			<div class="flex flex-col w-full">
 				<span>Intern – Sheffield Forgemasters International</span>
 				<span class="text-mid">Internal NDT logging system</span>
@@ -58,7 +64,7 @@
 		<h3 class="text-light font-semibold">Side Projects</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand w-32">Ongoing</div>
+			<div class="text-light w-32">Ongoing</div>
 			<div class="flex flex-col w-full">
 				<span>Portfolio</span>
 				<span class="text-mid"
@@ -72,7 +78,7 @@
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand w-32">2022</div>
+			<div class="text-light w-32">2022</div>
 			<div class="flex flex-col w-full">
 				<span>
 					<a class="underline" href="http://spot-the-intro.lewistravis.co.uk">
@@ -114,13 +120,13 @@
 		<div class="grid grid-cols-3 pt-4 gap-2">
 			{#each keySkills as skill}
 				<button
-					class="py-2 px-4 shadow-md no-underline rounded-full bg-brand text-light font-semibold text-sm"
+					class="py-2 px-4 shadow-md no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
 					>{skill}</button
 				>
 			{/each}
 			{#each skills as skill}
 				<button
-					class="py-2 px-4 shadow-md no-underline rounded-full bg-mid text-dark font-semibold text-sm"
+					class="py-2 px-4 shadow-md no-underline rounded-full bg-mid text-dark font-semibold text-sm cursor-auto"
 					>{skill}</button
 				>
 			{/each}
