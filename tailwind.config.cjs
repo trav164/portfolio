@@ -9,12 +9,23 @@ module.exports = {
     },
     colors: {
       ...colors,
-      brand: "#E34A32",
-      dark: "#141618",
-      mid: "#BAC1B8",
+      brand: "#6366F1",
+      dark: "#1E293B",
+      mid: "#B8BFC6",
       light: "#FFFFFF"
     },
     extend: {},
   },
   plugins: [],
 }
+// PURPLE
+// brand: "#6366F1",
+// dark: "#1E293B",
+// mid: "#B8BFC6",
+// light: "#FFFFFF"
+
+// DARK & RED
+// brand: "#E34A32",
+// dark: "#141618",
+// mid: "#BAC1B8",
+// light: "#FFFFFF",
