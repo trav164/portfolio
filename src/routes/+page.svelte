@@ -1,6 +1,6 @@
 <script lang="ts">
 	const keySkills: string[] = ['Typescript', 'Angular', 'React', 'Svelte', 'TailwindCSS'];
-	const skills: string[] = ['Node', 'Docker', 'Azure', 'Supabase', 'Svelte'];
+	const skills: string[] = ['Node', 'Docker', 'Azure', 'Supabase', 'MongoDB'];
 </script>
 
 <main class="mx-auto sm:w-[600px] w-96 p-6">
@@ -19,12 +19,12 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="flex flex-col hover:contrast-125 transition-all duration-500">
+			<div class="flex flex-col hover:contrast-125 transition-all duration-500">
 				<button
 					class="justify-center py-2 px-4 bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
-					>Contact</button
+					><a href="/contact">Get in touch</a></button
 				>
-			</div> -->
+			</div>
 		</div>
 	</section>
 
@@ -115,7 +115,7 @@
 
 	<section class="pt-12">
 		<h3 class="text-light font-semibold">Buzzwords (Skills)</h3>
-		<p class="text-mid font-xs italic">Key skills highlighted</p>
+		<p class="text-mid font-xs italic">*Key skills highlighted</p>
 
 		<div class="grid grid-cols-3 pt-4 gap-2">
 			{#each keySkills as skill}
