@@ -115,7 +115,7 @@
 
 	<section class="pt-12">
 		<h3 class="text-light font-semibold">Buzzwords (Skills)</h3>
-		<p class="text-mid font-xs italic">Key skills highlighted</p>
+		<p class="text-mid font-xs italic">*Key skills highlighted</p>
 
 		<div class="grid grid-cols-3 pt-4 gap-2">
 			{#each keySkills as skill}

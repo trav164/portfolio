@@ -26,7 +26,7 @@
 				<span class="label-text"> Name </span>
 			</label>
 			<input
-				class="shadow bg-dark border border-brand rounded w-full py-2 px-3 text-mid leading-tight focus:outline-none focus:shadow-outline"
+				class="shadow bg-dark border border-brand rounded w-full py-2 px-3 text-mid leading-tight focus:outline-none focus:shadow-outline focus:ring focus:ring-brand"
 				name="name"
 				type="text"
 				placeholder="Name"
@@ -46,7 +46,7 @@
 				<span class="label-text"> Email </span>
 			</label>
 			<input
-				class="shadow bg-dark border border-brand rounded w-full py-2 px-3 text-mid leading-tight focus:outline-none focus:shadow-outline"
+				class="shadow bg-dark border border-brand rounded w-full py-2 px-3 text-mid leading-tight focus:outline-none focus:shadow-outline focus:ring focus:ring-brand"
 				name="email"
 				type="text"
 				placeholder="Email"
@@ -68,7 +68,7 @@
 			</label>
 
 			<textarea
-				class="shadow bg-dark border border-brand rounded w-full py-2 px-3 text-mid leading-tight focus:outline-none focus:shadow-outline"
+				class="shadow bg-dark border border-brand rounded w-full py-2 px-3 text-mid leading-tight focus:outline-none focus:shadow-outline focus:ring focus:ring-brand"
 				name="message"
 				rows="6"
 				placeholder="Drop me a line"
@@ -86,13 +86,17 @@
 
 		<div class="flex flex-col gap-4 items-center justify-between">
 			<button
-				class="bg-brand text-light hover:scale-105 duration-300 tranistion-all ease-in-out w-full font-semibold py-2 px-4 rounded focus:outline-none focus:shadow-outline mx-auto"
+				class="bg-brand text-light hover:scale-105 duration-300 tranistion-all ease-in-out w-full font-semibold py-2 px-4 rounded focus:outline-none  mx-auto"
 				type="submit"
 			>
 				Submit
 			</button>
 
-			<a href="/" class="text-mid font-bold w-full text-center py-2 px-4 rounded ">Cancel</a>
+			<a
+				href="/"
+				class="text-mid font-bold w-full text-center py-2 px-4 rounded focus:outline-none focus:ring focus:ring-brand"
+				>Cancel</a
+			>
 		</div>
 	</form>
 </div>

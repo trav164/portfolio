@@ -1,5 +1,5 @@
 import { AIRTABLE_API_KEY, AIRTABLE_BASE_ID, AIRTABLE_TABLE_NAME } from '$env/static/private';
-import { redirect, type Actions, type Redirect } from '@sveltejs/kit';
+import type { Actions } from '@sveltejs/kit';
 import { z, ZodError } from 'zod';
 import { MapContactForm } from '../../lib/ContactFormMapper';
 import type { ContactForm } from '../../types/ContactForm';
@@ -56,10 +56,8 @@ export const actions: Actions = {
                 body: JSON.stringify(data),
 
             })
-            // Maybe throw a redirect here if or show the user a success message?
 
-            return redirect(300, '/');
-        } catch ({ error }) {
+        } catch (error: unknown) {
             const err = error as ZodError;
             const { fieldErrors: errors } = err.flatten();
             const { ...rest } = contactForm;
