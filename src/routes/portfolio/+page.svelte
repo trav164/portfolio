@@ -33,8 +33,8 @@
 		<h3 class="text-light">Work Experience</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand">2019 - present</div>
-			<div class="flex flex-col">
+			<div class="text-brand w-32">2019 - present</div>
+			<div class="flex flex-col w-full">
 			  <span>Software Engineer – CGI</span>
 			  <span class="text-mid">Various Projects</span>
 			  <span class="text-mid">TS • Angular • .NET • MongoDb • Material</span>
@@ -42,8 +42,8 @@
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand">2019 - present</div>
-			<div class="flex flex-col">
+			<div class="text-brand w-32">2019 - present</div>
+			<div class="flex flex-col w-full">
 			  <span>Intern – Sheffield Forgemasters International</span>
 			  <span class="text-mid">Internal NDT logging system</span>
 			  <span class="text-mid">TS • Angular • .NET • MongoDb • Material</span>
@@ -55,8 +55,8 @@
 		<h3 class="text-light">Side Projects</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand">Ongoing</div>
-			<div class="flex flex-col">
+			<div class="text-brand w-32">Ongoing</div>
+			<div class="flex flex-col w-full">
 			  <span>Portfolio</span>
 			  <span class="text-mid">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, tenetur?</span>
 			  <span class="text-mid">TS • SvelteKit • TailwindCSS • Supabase • Vercel</span>
@@ -64,8 +64,8 @@
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-brand">2022</div>
-			<div class="flex flex-col">
+			<div class="text-brand w-32">2022</div>
+			<div class="flex flex-col w-full">
 			  <span>
 				<a class="underline" href="http://spot-the-intro.lewistravis.co.uk">
 					Spot The Intro
@@ -103,22 +103,22 @@
 		<h3 class="text-light">Links</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-mid">Github</div>
-			<div class="flex flex-col">
+			<div class="text-mid w-32">Github</div>
+			<div class="flex flex-col w-full">
 			  <span class="text-light">@trav164</span>
 			</div>
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-mid">LinkedIn</div>
-			<div class="flex flex-col">
+			<div class="text-mid w-32">LinkedIn</div>
+			<div class="flex flex-col w-full">
 			  <span class="text-light">@trav164</span>
 			</div>
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-mid">Twitter</div>
-			<div class="flex flex-col">
+			<div class="text-mid w-32">Twitter</div>
+			<div class="flex flex-col w-full">
 			  <span class="text-light">@lewistravis</span>
 			</div>
 		</div>
