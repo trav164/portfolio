@@ -14,7 +14,7 @@
 						alt="avatar"
 					/>
 					<div class="flex flex-col justify-center">
-						<h2 class="sm:text-4xl text-2xl font-poppins font-semibold text-light">Lewis Travis</h2>
+						<h2 class="sm:text-4xl text-2xl font-bold text-brand">Lewis Travis</h2>
 						<h3 class="italic font-bold text-sm text-mid">Fullstack Web Developer</h3>
 					</div>
 				</div>
