@@ -1,6 +1,6 @@
 <script lang="ts">
-	const keySkills: string[] = ['Typescript', 'Angular', 'React', 'Svelte', 'TailwindCSS'];
-	const skills: string[] = ['Node', 'Docker', 'Azure', 'Supabase', 'MongoDB'];
+	const keySkills: string[] = ['Typescript', 'Angular', 'React', 'Svelte', 'Tailwind', 'UX'];
+	const skills: string[] = ['Node', 'Docker', 'Azure', 'Supabase', 'MongoDB', 'Postgres'];
 </script>
 
 <main class="mx-auto sm:w-[600px] w-96 p-6">
@@ -55,7 +55,7 @@
 			<div class="flex flex-col w-full">
 				<span>Intern – Sheffield Forgemasters International</span>
 				<span class="text-mid">Internal NDT logging system</span>
-				<span class="text-mid">Agile • VB • Python • NodeJS</span>
+				<span class="text-mid">Agile • VB • Python • Node</span>
 			</div>
 		</div>
 	</section>
@@ -73,7 +73,7 @@
 						><span class="text-white underline">Maxime Bonhomme</span></a
 					>
 				</span>
-				<span class="text-mid pt-2">TS • SvelteKit • TailwindCSS </span>
+				<span class="text-mid pt-2">TS • SvelteKit • Tailwind </span>
 			</div>
 		</div>
 
@@ -107,7 +107,7 @@
 					>Enhancing Spot The Intro game created by Cheatwell Games by automating song searching.</span
 				>
 				<span class="text-mid pt-2"
-					>TS • SvelteKit • TailwindCSS • Cloudflare Workers • Supabase • Vercel</span
+					>TS • SvelteKit • Tailwind • Cloudflare Workers • Supabase • Vercel</span
 				>
 			</div>
 		</div>
