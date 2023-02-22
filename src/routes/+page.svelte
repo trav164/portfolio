@@ -1,6 +1,6 @@
 <script lang="ts">
 	const keySkills: string[] = ['Typescript', 'Angular', 'React', 'Svelte', 'Tailwind', 'UX'];
-	const skills: string[] = ['Node', 'Docker', 'Azure', 'Supabase', 'MongoDB', 'Postgres'];
+	const skills: string[] = ['.NET', 'Node', 'Docker', 'Azure', 'Supabase', 'MongoDB', 'Postgres'];
 </script>
 
 <main class="mx-auto sm:w-[600px] w-96 p-6">
@@ -21,11 +21,11 @@
 			</div>
 			<div class="flex flex-col hover:contrast-125 transition-all duration-500">
 				<a href="/contact">
-				<button
-					class="justify-center py-2 px-4 w-full bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
-					>Get in touch</button
-				>
-			</a>
+					<button
+						class="justify-center py-2 px-4 w-full bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
+						>Get in touch</button
+					>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -117,13 +117,14 @@
 
 	<section class="pt-12">
 		<h3 class="text-light font-semibold">Buzzwords (Skills)</h3>
-		<p class="text-mid font-xs italic">*Key skills highlighted</p>
+		<p class="text-mid font-xs italic">🏆 Key skills highlighted</p>
 
 		<div class="grid grid-cols-3 pt-4 gap-2">
 			{#each keySkills as skill}
 				<button
 					class="py-2 px-4 shadow-md no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
-					>{skill}</button
+				>
+					🏆{skill}</button
 				>
 			{/each}
 			{#each skills as skill}
