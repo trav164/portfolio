@@ -65,7 +65,8 @@ export const actions: Actions = {
             // SK treats this differently than a standard error. 
             // This allows them to populate on the client side via some SK magic. 
             // This also ends execution for the lines below. 
-            return fail(400, { error: true, errors, ...formdata })
+            // Because we use progressive enhancment on the form we don't have to send back the form data to re-populate the form.
+            return fail(400, { error: true, errors })
         }
 
         // If you got here, you have valid form data. Now you can extract it. 

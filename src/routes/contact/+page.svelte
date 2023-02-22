@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { enhance } from '$app/forms';
 	// Note how we can import this type - the TS compiler picks it up
 	// from the +page.server.ts file. This is the output of what is returned
 	// from the actions.
@@ -26,7 +27,7 @@
 	<p class="text-lg mt-2 text-mid text-center mb-12">
 		Drop me a line and I'll get back to you as soon as possible.
 	</p>
-	<form method="POST" action="?/submit">
+	<form use:enhance method="POST" action="?/submit">
 		<div class="mb-4">
 			<label class="label text-white text-left block mb-2" for="name">
 				<span class="label-text"> Name </span>
@@ -36,7 +37,6 @@
 				name="name"
 				type="text"
 				placeholder="Name"
-				value={form?.name ?? ''}
 			/>
 			<label class="label text-white text-left block mt-2" for="name">
 				{#if nameErrors.length > 0}
@@ -58,7 +58,6 @@
 				name="email"
 				type="text"
 				placeholder="Email"
-				value={form?.email ?? ''}
 			/>
 
 			<label class="label text-white text-left block mt-2" for="email">
@@ -82,7 +81,6 @@
 				name="message"
 				rows="6"
 				placeholder="Drop me a line"
-				value={form?.message ?? ''}
 			/>
 
 			<label class="label text-white text-left block" for="message">
