@@ -47,8 +47,13 @@
 			<div class="text-light w-32">2019 - present</div>
 			<div class="flex flex-col w-full">
 				<span>Software Engineer – CGI</span>
-				<span class="text-mid">Various Projects</span>
-				<span class="text-mid">TS • Angular • .NET • MongoDb • Material</span>
+
+				<span class="text-mid"
+					>Worked on several projects, focused mainly on front-end development. Currently working as
+					a lead front-end software developer using Angular in tandem with the technical lead whilst
+					also upskilling in backend technologies in order become a more well-rounded developer.
+				</span>
+				<span class="text-mid">TS • Angular • NGRX • React • .NET • MongoDb • Material • </span>
 			</div>
 		</div>
 

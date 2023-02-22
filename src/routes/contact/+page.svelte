@@ -18,8 +18,6 @@
 	$: nameErrors = form?.errors.filter((err) => err.field === 'name') ?? [];
 	$: emailErrors = form?.errors.filter((err) => err.field === 'email') ?? [];
 	$: messageErrors = form?.errors.filter((err) => err.field === 'message') ?? [];
-
-	console.log(nameErrors);
 </script>
 
 <div class="mx-auto sm:w-[600px] w-96 p-6">
