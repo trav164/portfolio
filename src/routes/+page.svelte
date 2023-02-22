@@ -20,10 +20,12 @@
 				</div>
 			</div>
 			<div class="flex flex-col hover:contrast-125 transition-all duration-500">
+				<a href="/contact">
 				<button
-					class="justify-center py-2 px-4 bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
-					><a href="/contact">Get in touch</a></button
+					class="justify-center py-2 px-4 w-full bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
+					>Get in touch</button
 				>
+			</a>
 			</div>
 		</div>
 	</section>
