@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Theme from '../lib/Theme.svelte';
+
 	const keySkills: string[] = ['Typescript', 'Angular', 'React', 'Svelte', 'Tailwind', 'UX'];
 	const skills: string[] = ['.NET', 'Node', 'Docker', 'Azure', 'Supabase', 'MongoDB', 'Postgres'];
 </script>
@@ -6,6 +8,9 @@
 <main class="mx-auto sm:w-[600px] w-96 p-6">
 	<section>
 		<div class="pt-20">
+			<div class="flex justify-end">
+				<Theme />
+			</div>
 			<div class="flex">
 				<div class="flex flex-row gap-4">
 					<img
@@ -15,14 +20,16 @@
 					/>
 					<div class="flex flex-col justify-center">
 						<h2 class="sm:text-4xl text-2xl font-bold text-brand">Lewis Travis</h2>
-						<h3 class="italic font-bold text-sm text-mid">Fullstack Web Developer</h3>
+						<h3 class="italic font-bold text-sm text-dark dark:text-mid">
+							Fullstack Web Developer
+						</h3>
 					</div>
 				</div>
 			</div>
 			<div class="flex flex-col hover:contrast-125 transition-all duration-500">
 				<a href="/contact">
 					<button
-						class="justify-center py-2 px-4 w-full bg-brand text-light font-semibold rounded shadow-lg hover:scale-105 transition-all duration-500"
+						class="shadow-lg justify-center py-2 px-4 w-full bg-brand text-light font-semibold rounded hover:scale-105 transition-all duration-500"
 						>Get in touch</button
 					>
 				</a>
@@ -31,9 +38,9 @@
 	</section>
 
 	<section class="pt-12">
-		<h3 class="text-light font-semibold">About</h3>
+		<h3 class="text-dark dark:text-light font-semibold">About</h3>
 
-		<div class="pt-4 text-mid">
+		<div class="pt-4 text-dark dark:text-mid">
 			Hi I'm Lewis. I've created this simple portfolio to learn new skills and expand my knowledge
 			as a software developer. I'm always keen to learn new technology and enjoy working in
 			customer-oriented environments delivering products from start to finish.
@@ -41,79 +48,83 @@
 	</section>
 
 	<section class="pt-12">
-		<h3 class="text-light font-semibold">Work Experience</h3>
+		<h3 class="text-dark dark:text-light font-semibold">Work Experience</h3>
 
-		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-light w-32">2019 - present</div>
+		<div class="pt-6 flex gap-4 text-dark dark:text-light text-sm leading-6">
+			<div class="text-dark dark:text-light w-32">2019 - present</div>
 			<div class="flex flex-col w-full">
-				<span>Software Engineer – CGI</span>
+				<span class="font-semibold text-dark dark:text-light">Software Engineer – CGI</span>
 
-				<span class="text-mid"
+				<span class="text-dark dark:text-mid"
 					>Worked on several projects, focused mainly on front-end development. Currently working as
 					a lead front-end software developer using Angular in tandem with the technical lead whilst
 					also upskilling in backend technologies in order become a more well-rounded developer.
 				</span>
-				<span class="text-mid">TS • Angular • NGRX • React • .NET • MongoDb • Material • </span>
+				<span class="text-brand dark:text-mid pt-2 italic"
+					>TS • Angular • NGRX • React • .NET • MongoDb • Material •
+				</span>
 			</div>
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-light w-32">2017 - 2018</div>
+			<div class="text-dark dark:text-light w-32">2017 - 2018</div>
 			<div class="flex flex-col w-full">
-				<span>Intern – Sheffield Forgemasters International</span>
-				<span class="text-mid">Internal NDT logging system</span>
-				<span class="text-mid">Agile • VB • Python • Node</span>
+				<span class="font-semibold text-dark dark:text-light"
+					>Intern – Sheffield Forgemasters International</span
+				>
+				<span class="text-dark dark:text-mid">Internal NDT logging system</span>
+				<span class="text-brand dark:text-mid pt-2 italic">Agile • VB • Python • Node</span>
 			</div>
 		</div>
 	</section>
 
 	<section class="pt-12">
-		<h3 class="text-light font-semibold">Side Projects</h3>
+		<h3 class="text-dark dark:text-light font-semibold">Side Projects</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-light w-32">Ongoing</div>
+			<div class="text-dark dark:text-light w-32">Ongoing</div>
 			<div class="flex flex-col w-full">
-				<span>Portfolio</span>
-				<span class="text-mid"
+				<span class="font-semibold text-dark dark:text-light">Portfolio</span>
+				<span class="text-dark dark:text-mid"
 					>A simple portfolio site to showcase some of my skills inspired by <a
 						href="https://bonhomme.lol/"
-						><span class="text-white underline">Maxime Bonhomme</span></a
+						><span class="text-dark dark:text-white underline">Maxime Bonhomme</span></a
 					>
 				</span>
-				<span class="text-mid pt-2">TS • SvelteKit • Tailwind </span>
+				<span class="text-brand dark:text-mid pt-2 italic">TS • SvelteKit • Tailwind </span>
 			</div>
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-light w-32">2022</div>
+			<div class="text-dark dark:text-light w-32">2022</div>
 			<div class="flex flex-col w-full">
 				<span>
-					<a class="underline" href="http://spot-the-intro.lewistravis.co.uk">
+					<a
+						class="underline font-semibold text-dark dark:text-light"
+						href="http://spot-the-intro.lewistravis.co.uk"
+					>
 						Spot The Intro
 						<svg
-							class="text-white h-4 mb-1 w-4 inline-block ml-2 underline"
-							viewBox="0 -256 1850 1850"
-							id="svg3025"
-							version="1.1"
-							width="100%"
-							height="100%"
+							class="inline-block h-4 -ml-1 mb-1 text-dark dark:text-light"
+							xmlns="http://www.w3.org/2000/svg"
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline
+								points="15 3 21 3 21 9"
+							/><line x1="10" y1="14" x2="21" y2="3" /></svg
 						>
-							<defs id="defs3033" />
-
-							<g transform="matrix(1,0,0,-1,30.372881,1426.9492)" id="g3027">
-								<path
-									d="M 1408,608 V 288 Q 1408,169 1323.5,84.5 1239,0 1120,0 H 288 Q 169,0 84.5,84.5 0,169 0,288 v 832 Q 0,1239 84.5,1323.5 169,1408 288,1408 h 704 q 14,0 23,-9 9,-9 9,-23 v -64 q 0,-14 -9,-23 -9,-9 -23,-9 H 288 q -66,0 -113,-47 -47,-47 -47,-113 V 288 q 0,-66 47,-113 47,-47 113,-47 h 832 q 66,0 113,47 47,47 47,113 v 320 q 0,14 9,23 9,9 23,9 h 64 q 14,0 23,-9 9,-9 9,-23 z m 384,864 V 960 q 0,-26 -19,-45 -19,-19 -45,-19 -26,0 -45,19 L 1507,1091 855,439 q -10,-10 -23,-10 -13,0 -23,10 L 695,553 q -10,10 -10,23 0,13 10,23 l 652,652 -176,176 q -19,19 -19,45 0,26 19,45 19,19 45,19 h 512 q 26,0 45,-19 19,-19 19,-45 z"
-									id="path3029"
-									style="fill:currentColor"
-								/>
-							</g>
-						</svg>
 					</a>
 				</span>
-				<span class="text-mid"
+				<span class="text-dark dark:text-mid"
 					>Enhancing Spot The Intro game created by Cheatwell Games by automating song searching.</span
 				>
-				<span class="text-mid pt-2"
+				<span class="text-brand dark:text-mid pt-2"
 					>TS • SvelteKit • Tailwind • Cloudflare Workers • Supabase • Vercel</span
 				>
 			</div>
@@ -121,10 +132,10 @@
 	</section>
 
 	<section class="pt-12">
-		<h3 class="text-light font-semibold">Buzzwords (Skills)</h3>
-		<p class="text-mid font-xs italic">🏆 Key skills highlighted</p>
+		<h3 class="text-dark dark:text-light font-semibold">Buzzwords (Skills)</h3>
+		<p class="text-brand dark:text-mid font-xs italic pb-2">🏆 Key skills highlighted</p>
 
-		<div class="grid grid-cols-3 pt-4 gap-2">
+		<div class="grid grid-cols-3 pt-4 gap-4">
 			{#each keySkills as skill}
 				<button
 					class="py-2 px-4 shadow-md no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
@@ -142,19 +153,19 @@
 	</section>
 
 	<section class="pt-12">
-		<h3 class="text-light font-semibold">Links</h3>
+		<h3 class="text-dark dark:text-light font-semibold">Links</h3>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-mid w-32">Github</div>
+			<div class="text-dark dark:text-mid w-32">Github</div>
 			<div class="flex flex-col w-full">
-				<span class="text-light underline"><a href="https://github.com/trav164">@trav164</a></span>
+				<span class="text-brand underline"><a href="https://github.com/trav164">@trav164</a></span>
 			</div>
 		</div>
 
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
-			<div class="text-mid w-32">LinkedIn</div>
+			<div class="text-dark dark:text-mid w-32">LinkedIn</div>
 			<div class="flex flex-col w-full">
-				<span class="text-light underline"
+				<span class="text-brand underline"
 					><a href="https://www.linkedin.com/in/lewis-travis-43656ab5/">Lewis Travis</a></span
 				>
 			</div>
