@@ -79,7 +79,8 @@ export const actions: Actions = {
                         // Here the 'data' property of what the validator spit out is used. 
                         // This is fine because the data is known to be valid by this point. 
                         // The validator also made sure it's in the shape you need. 
-                        ...parsedContactForm.data
+                        ...parsedContactForm.data,
+                        date: new Date,
                     },
                 },
             ],
