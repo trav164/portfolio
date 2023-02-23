@@ -135,12 +135,12 @@
 		<h3 class="text-dark dark:text-light font-semibold">Buzzwords (Skills)</h3>
 		<p class="text-brand dark:text-mid font-xs italic pb-2">🏆 Key skills highlighted</p>
 
-		<div class="grid grid-cols-3 pt-4 gap-4">
+		<div class="grid grid-cols-2 md:grid-cols-3 pt-4 gap-4">
 			{#each keySkills as skill}
 				<button
-					class="py-2 px-2 shadow-lg no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
+					class="py-2 px-2 flex items-center justify-center gap-2 shadow-lg no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
 				>
-					<span class="md:mr-1 block md:inline-block">🏆</span>{skill}</button
+					🏆 {skill}</button
 				>
 			{/each}
 			{#each skills as skill}
