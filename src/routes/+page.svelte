@@ -138,14 +138,14 @@
 		<div class="grid grid-cols-3 pt-4 gap-4">
 			{#each keySkills as skill}
 				<button
-					class="py-2 px-4 shadow-md no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
+					class="py-2 px-2 shadow-lg no-underline rounded-full bg-brand text-light font-semibold text-sm cursor-auto"
 				>
-					🏆{skill}</button
+					<span class="md:mr-1 block md:inline-block">🏆</span>{skill}</button
 				>
 			{/each}
 			{#each skills as skill}
 				<button
-					class="py-2 px-4 shadow-md no-underline rounded-full bg-mid text-dark font-semibold text-sm cursor-auto"
+					class="py-2 px-4 shadow-lg no-underline rounded-full bg-mid text-dark font-semibold text-sm cursor-auto"
 					>{skill}</button
 				>
 			{/each}
