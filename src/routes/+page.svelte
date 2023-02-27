@@ -12,9 +12,9 @@
 				<Theme />
 			</div>
 			<div class="flex">
-				<div class="flex flex-row gap-4">
+				<div class="flex flex-row gap-4 py-2">
 					<img
-						class="w-20 h-20 rounded-full animate-bounce"
+						class="w-20 h-20 rounded-full hover:animate-spin"
 						src="https://api.dicebear.com/5.x/big-ears-neutral/svg?seed=lewis"
 						alt="avatar"
 					/>
