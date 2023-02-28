@@ -84,11 +84,25 @@
 		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
 			<div class="text-dark dark:text-light w-32">Ongoing</div>
 			<div class="flex flex-col w-full">
+				<span class="font-semibold text-dark dark:text-light">Recipe Amigo</span>
+				<span class="text-dark dark:text-mid">
+					Web app to search for your favourite dishes, collaborate with a household to plan a meal
+					plan and collate ingredients for a shopping list.
+				</span>
+				<span class="text-brand dark:text-mid pt-2 italic"
+					>TS • SvelteKit • Tailwind • Supabase • Prisma</span
+				>
+			</div>
+		</div>
+
+		<div class="pt-6 flex gap-4 text-light text-sm leading-6">
+			<div class="text-dark dark:text-light w-32">2022</div>
+			<div class="flex flex-col w-full">
 				<span class="font-semibold text-dark dark:text-light">Portfolio</span>
 				<span class="text-dark dark:text-mid"
 					>A simple portfolio site to showcase some of my skills inspired by <a
 						href="https://bonhomme.lol/"
-						><span class="text-dark dark:text-white underline">Maxime Bonhomme</span></a
+						><span class="text-dark dark:text-white underline">Maxime Bonhomme</span>.</a
 					>
 				</span>
 				<span class="text-brand dark:text-mid pt-2 italic">TS • SvelteKit • Tailwind </span>
@@ -124,7 +138,7 @@
 				<span class="text-dark dark:text-mid"
 					>Enhancing Spot The Intro game created by Cheatwell Games by automating song searching.</span
 				>
-				<span class="text-brand dark:text-mid pt-2"
+				<span class="text-brand dark:text-mid pt-2 italic"
 					>TS • SvelteKit • Tailwind • Cloudflare Workers • Supabase • Vercel</span
 				>
 			</div>
