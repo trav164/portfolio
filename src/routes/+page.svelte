@@ -39,8 +39,8 @@
 
 	<section class="">
 		<h3 class="text-dark dark:text-light font-semibold">Hi, I'm Lewis</h3>
-		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand" />
-		<div class="pt-4 text-dark dark:text-mid">
+		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand my-3" />
+		<div class="text-dark dark:text-mid">
 			I've created this simple portfolio to learn new skills and expand my knowledge as a software
 			developer. I'm always keen to learn new technology and enjoy working in customer-oriented
 			environments delivering products from start to finish.
@@ -49,9 +49,9 @@
 
 	<section class="">
 		<h3 class="text-dark dark:text-light font-semibold">Work Experience</h3>
-		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand" />
+		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand my-3" />
 
-		<div class="mt-6 flex gap-4 text-dark dark:text-light text-sm leading-6">
+		<div class="flex gap-4 text-dark dark:text-light text-sm leading-6">
 			<div class="text-dark dark:text-light w-32">2019 - present</div>
 			<div class="flex flex-col w-full">
 				<span class="font-semibold text-dark dark:text-light">Software Engineer – CGI</span>
@@ -81,9 +81,9 @@
 
 	<section class="">
 		<h3 class="text-dark dark:text-light font-semibold">Side Projects</h3>
-		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand" />
+		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand my-3" />
 
-		<div class="mt-6 flex gap-4 text-light text-sm leading-6">
+		<div class="flex gap-4 text-light text-sm leading-6">
 			<div class="text-dark dark:text-light w-32">Ongoing</div>
 			<div class="flex flex-col w-full">
 				<span class="font-semibold text-dark dark:text-light">Recipe Amigo</span>
@@ -148,12 +148,12 @@
 	</section>
 
 	<section class="">
-		<h3 class="text-dark dark:text-light font-semibold">Buzzwords (Skills)</h3>
-		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand" />
+		<h3 class="text-dark dark:text-light font-semibold">
+			Buzzwords (Skills) <span class="text-brand dark:text-mid italic text-xs">🏆 Key Skills</span>
+		</h3>
+		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand my-3" />
 
-		<p class="text-brand dark:text-mid font-xs italic py-2">🏆 Key Skills</p>
-
-		<div class="grid grid-cols-2 md:grid-cols-3 pt-4 gap-4">
+		<div class="grid grid-cols-2 md:grid-cols-3 mt-6 gap-4">
 			{#each keySkills as skill}
 				<button
 					class="py-2 px-2 flex items-center justify-center gap-2 shadow-lg no-underline rounded-full bg-gradient-to-tr from-indigo-600 to-brand text-light font-semibold text-sm cursor-auto"
@@ -172,9 +172,9 @@
 
 	<section class="">
 		<h3 class="text-dark dark:text-light font-semibold">My Socials</h3>
-		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand" />
+		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand my-3" />
 
-		<div class="mt-6 flex gap-4 text-light text-sm leading-6">
+		<div class="flex gap-4 text-light text-sm leading-6">
 			<div class="text-dark dark:text-mid w-32">Github</div>
 			<div class="flex flex-col w-full">
 				<span class="text-brand underline"><a href="https://github.com/trav164">@trav164</a></span>
