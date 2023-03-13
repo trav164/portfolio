@@ -1,8 +1,17 @@
 <script lang="ts">
 	import Theme from '../lib/Theme.svelte';
 
-	const keySkills: string[] = ['Typescript', 'Angular', 'React', 'Svelte', 'Tailwind', 'UX'];
-	const skills: string[] = ['.NET', 'Node', 'Docker', 'Azure', 'Supabase', 'MongoDB', 'Postgres'];
+	const keySkills: string[] = ['Typescript', 'Angular', 'Svelte', 'Tailwind', 'UX'];
+	const skills: string[] = [
+		'.NET',
+		'React',
+		'Node',
+		'Docker',
+		'Azure',
+		'Supabase',
+		'MongoDB',
+		'Postgres'
+	];
 </script>
 
 <main class="mx-auto sm:w-[600px] w-96 p-6 flex flex-col gap-12">
