@@ -20,6 +20,14 @@
 	$: messageErrors = form?.errors.filter((err) => err.field === 'message') ?? [];
 </script>
 
+<svelte:head>
+	<title>Lewis Travis - Contact</title>
+	<meta
+		name="description"
+		content="A simple contact page which users can use to contact me about anything that might be related from the website."
+	/>
+</svelte:head>
+
 <div class="mx-auto sm:w-[600px] w-96 p-6">
 	<h1 class="text-6xl font-bold text-brand text-center mt-12">Contact</h1>
 	<p class="text-lg mt-2 text-dark dark:text-mid text-center mb-12">
