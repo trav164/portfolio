@@ -28,10 +28,15 @@
 						alt="avatar"
 					/>
 					<div class="flex flex-col justify-center">
-						<h2 class="sm:text-4xl text-2xl font-bold text-brand">Lewis Travis</h2>
-						<h1 class="italic font-bold text-sm text-dark dark:text-mid">
-							Fullstack Web Developer
+						<h1 class="sm:text-4xl text-2xl font-bold text-brand">
+							Lewis Travis
+							<span class="flex italic font-bold text-sm text-dark dark:text-mid"
+								>Fullstack Web Developer</span
+							>
 						</h1>
+						<!-- <h1 class="italic font-bold text-sm text-dark dark:text-mid">
+							Fullstack Web Developer
+						</h1> -->
 					</div>
 				</div>
 			</div>
