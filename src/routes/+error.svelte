@@ -12,10 +12,6 @@
 				</strong>
 			</h1>
 
-			<p class="mt-4 sm:text-xl sm:leading-relaxed text-dark dark:text-mid">
-				{$page.error?.message}
-			</p>
-
 			<div class="mt-8 flex flex-wrap justify-center gap-4">
 				<a
 					class="block w-full rounded bg-brand text-light px-12 py-3 text-md font-semibold shadow hover:contrast-125 focus:outline-none focus:ring sm:w-auto"

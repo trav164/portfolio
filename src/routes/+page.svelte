@@ -34,9 +34,6 @@
 								>Fullstack Web Developer</span
 							>
 						</h1>
-						<!-- <h1 class="italic font-bold text-sm text-dark dark:text-mid">
-							Fullstack Web Developer
-						</h1> -->
 					</div>
 				</div>
 			</div>
@@ -100,14 +97,15 @@
 		<div class="flex gap-4 text-light text-sm leading-6">
 			<div class="text-dark dark:text-light w-32">Ongoing</div>
 			<div class="flex flex-col w-full">
-				<span class="font-semibold text-dark dark:text-light">Recipe Amigo</span>
+				<span class="font-semibold text-dark dark:text-light">Tales of The Backyard Farm</span>
 				<span class="text-dark dark:text-mid">
-					Web app to search for your favourite dishes, collaborate with a household to plan a meal
-					plan and collate ingredients for a shopping list.
+					An author and publishing house creating and distributing childrens books. I was tasked
+					with re-designing and implementing a whole new site to match the feel of the books as well
+					as incorporating mechanisms for the business to sell and distribute their material.
 				</span>
 				<span class="text-brand dark:text-mid pt-2 italic"
-					>TS • SvelteKit • Tailwind • Supabase • Prisma</span
-				>
+					>TS • SvelteKit • Tailwind • Stripe
+				</span>
 			</div>
 		</div>
 
