@@ -14,6 +14,14 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Lewis Travis - Home</title>
+	<meta
+		name="description"
+		content="A simple portfolio to learn new skills and expand my knowledge as a software developer."
+	/>
+</svelte:head>
+
 <main class="mx-auto sm:w-[600px] w-96 p-6 flex flex-col gap-12">
 	<section>
 		<div class="pt-20">
@@ -73,7 +81,7 @@
 					also upskilling in backend technologies in order become a more well-rounded developer.
 				</span>
 				<span class="text-brand dark:text-mid pt-2 italic"
-					>TS • Angular • NGRX • React • .NET • MongoDB • Material •
+					>TS • Angular • NGRX • React • .NET • MongoDB • Material
 				</span>
 			</div>
 		</div>
