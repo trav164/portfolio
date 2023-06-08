@@ -48,7 +48,7 @@
 			<div class="flex flex-col hover:contrast-125 transition-all duration-500">
 				<a href="/contact">
 					<button
-						class="shadow-lg justify-center py-2 px-4 w-full bg-brand text-light font-semibold rounded hover:scale-105 transition-all duration-500"
+						class="shadow-lg justify-center py-2 px-4 w-full outline outline-2 outline-brand hover:bg-brandLighter bg-brand text-light font-semibold rounded"
 						>Get in touch</button
 					>
 				</a>
@@ -175,23 +175,24 @@
 
 		<div class="grid grid-cols-2 md:grid-cols-3 mt-6 gap-4">
 			{#each keySkills as skill}
-				<button
-					class="py-2 px-2 flex items-center justify-center gap-2 shadow-lg no-underline rounded-full bg-gradient-to-tr from-indigo-600 to-brand text-light font-semibold text-sm cursor-auto"
+				<div
+					class="py-2 px-2 text-center gap-2 rounded-full outline outline-2 outline-brand dark:text-light text-dark font-semibold text-sm cursor-auto"
 				>
-					🏆 {skill}</button
-				>
+					🏆 {skill}
+				</div>
 			{/each}
 			{#each skills as skill}
-				<button
-					class="py-2 px-4 shadow-lg no-underline rounded-full bg-gradient-to-tr from-mid to-gray-200 text-dark font-semibold text-sm cursor-auto"
-					>{skill}</button
+				<div
+					class="py-2 px-4 text-center outline outline-2 outline-slate-500 rounded-full bg-opacity-40 dark:text-light text-dark font-semibold text-sm cursor-auto"
 				>
+					{skill}
+				</div>
 			{/each}
 		</div>
 	</section>
 
 	<section class="">
-		<h3 class="text-dark dark:text-light font-semibold">My Socials</h3>
+		<h3 class="text-dark dark:text-light font-semibold">Socials</h3>
 		<hr class="border-none w-12 h-1 rounded bg-gradient-to-r from-indigo-400 to-brand my-3" />
 
 		<div class="flex gap-4 text-light text-sm leading-6">
