@@ -102,7 +102,7 @@
 
 		<div class="flex flex-col gap-4 items-center justify-between">
 			<button
-				class="bg-brand shadow-lg text-light hover:scale-105 duration-300 tranistion-all ease-in-out w-full font-semibold py-2 px-4 rounded focus:outline-none  mx-auto"
+				class="bg-brand shadow-lg text-light outline outline-2 outline-brand w-full font-semibold py-2 px-4 rounded focus:outline-none mx-auto hover:bg-brandLighter"
 				type="submit"
 			>
 				Submit
@@ -110,7 +110,7 @@
 
 			<a
 				href="/"
-				class="text-dark dark:text-mid font-bold w-full text-center py-2 px-4 rounded focus:outline-none focus:ring focus:ring-brand"
+				class="text-dark dark:text-mid font-bold w-full outline outline-2 outline-slate-200 dark:outline-slate-700 dark:hover:bg-darkLighter hover:bg-slate-100 text-center py-2 px-4 rounded focus:outline-none focus:ring focus:ring-brand"
 				>Cancel</a
 			>
 		</div>
