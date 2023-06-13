@@ -1,10 +1,10 @@
-import { SENDGRID_API_KEY } from '$env/static/private';
 import { fail, type Actions } from '@sveltejs/kit';
 import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
 import sgMail from '@sendgrid/mail';
 import { redirect } from 'sveltekit-flash-message/server';
 import type { PageServerLoad } from './$types';
+import { SECRET_SENDGRID_API_KEY } from '$env/static/private';
 
 // This schema will be your source of truth moving forward. All the types you need will infer
 // from this. You can also use this with a library like Felte to get client side validation running - 
@@ -44,7 +44,7 @@ export const actions: Actions = {
             })
         }
 
-        sgMail.setApiKey(SENDGRID_API_KEY);
+        sgMail.setApiKey(SECRET_SENDGRID_API_KEY);
         const msg = {
             to: 'lewis@lewistravis.co.uk', // Change to your recipient
             from: {
