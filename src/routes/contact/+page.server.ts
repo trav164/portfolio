@@ -47,7 +47,10 @@ export const actions: Actions = {
         sgMail.setApiKey(SENDGRID_API_KEY);
         const msg = {
             to: 'lewis@lewistravis.co.uk', // Change to your recipient
-            from: `lewis@lewistravis.co.uk`, // Change to your verified sender
+            from: {
+                name: 'Portfolio Message',
+                email: `lewis@lewistravis.co.uk`
+            }, // Change to your verified sender
             subject: 'You have recieved a message from your portfolio',
             html: `
             FROM: ${form.data.email}
