@@ -1,23 +1,12 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
-	// Note how we can import this type - the TS compiler picks it up
-	// from the +page.server.ts file. This is the output of what is returned
-	// from the actions.
-	import type { ActionData } from './$types';
+	import type { ActionData, PageData } from './$types';
+	import { superForm } from 'sveltekit-superforms/client';
 
-	// the 'form' variable gets types by ActionData
-	// Note here that if you get a type hint, the 'errors' property is nullable.
-	// If something in your '+page.server.ts' file throws an expected error
-	// inside a form action, the results will show up here. Also any returned data
-	// from a form action will show up here. You can try putting this variable in a
-	// console.log and then watching your browser console and trying to submit bad data,
-	// and you'll see the shape of this. It looks like you have the right idea on
-	// line 22 below.
-	export let form: ActionData;
+	export let data: PageData;
 
-	$: nameErrors = form?.errors.filter((err) => err.field === 'name') ?? [];
-	$: emailErrors = form?.errors.filter((err) => err.field === 'email') ?? [];
-	$: messageErrors = form?.errors.filter((err) => err.field === 'message') ?? [];
+	const { form, errors, enhance } = superForm(data.form, {
+		taintedMessage: 'Are you sure you want to leave?'
+	});
 </script>
 
 <svelte:head>
@@ -44,15 +33,9 @@
 				type="text"
 				placeholder="Name"
 			/>
-			<label class="label text-white text-left block mt-2" for="name">
-				{#if nameErrors.length > 0}
-					<ul>
-						{#each nameErrors as error}
-							<li class="label text-red-400 text-sm">{error.message}</li>
-						{/each}
-					</ul>
-				{/if}
-			</label>
+			{#if $errors.name}
+				<small class="text-red-500 font-semibold">{$errors.name}</small>
+			{/if}
 		</div>
 
 		<div class="mb-4">
@@ -66,15 +49,9 @@
 				placeholder="Email"
 			/>
 
-			<label class="label text-white text-left block mt-2" for="email">
-				{#if emailErrors.length > 0}
-					<ul>
-						{#each emailErrors as error}
-							<li class="label text-red-400 text-sm">{error.message}</li>
-						{/each}
-					</ul>
-				{/if}
-			</label>
+			{#if $errors.email}
+				<small class="text-red-500 font-semibold">{$errors.email}</small>
+			{/if}
 		</div>
 
 		<div class="mb-4">
@@ -89,15 +66,9 @@
 				placeholder="Drop me a line"
 			/>
 
-			<label class="label text-white text-left block" for="message">
-				{#if messageErrors.length > 0}
-					<ul>
-						{#each messageErrors as error}
-							<li class="label text-red-400 text-sm">{error.message}</li>
-						{/each}
-					</ul>
-				{/if}
-			</label>
+			{#if $errors.message}
+				<small class="text-red-500 font-semibold">{$errors.message}</small>
+			{/if}
 		</div>
 
 		<div class="flex flex-col gap-4 items-center justify-between">
