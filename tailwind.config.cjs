@@ -5,16 +5,10 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      'poppins': ['Poppins', 'sans-serif'],
+      bricolage: ['Bricolage Grotesque']
     },
     colors: {
       ...colors,
-      brand: "#6366F1",
-      brandLighter: "#7E81FF",
-      dark: "#1E293B",
-      darkLighter: "#283750",
-      mid: "#B8BFC6",
-      light: "#FFFFFF"
     },
     extend: {},
   },

@@ -5,6 +5,7 @@
 	import { initFlash } from 'sveltekit-flash-message/client';
 	import { page } from '$app/stores';
 	import toast, { Toaster } from 'svelte-french-toast';
+	import Navbar from '$lib/Navbar.svelte';
 
 	inject({ mode: dev ? 'development' : 'production' });
 	const flash = initFlash(page);
@@ -24,4 +25,5 @@
 </script>
 
 <Toaster />
+<Navbar />
 <slot />
