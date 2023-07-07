@@ -1,6 +1,8 @@
 <script lang="ts">
 	import SkillsCard from './SkillsCard.svelte';
 
+	let isTechnical = true;
+
 	const technicalSkills: SkillDetails[] = [
 		{
 			title: 'Frontend Development',
@@ -15,22 +17,57 @@
 			dark: false
 		}
 	];
+
+	const softSkills: SkillDetails[] = [
+		{
+			title: 'Communication',
+			description:
+				'Effective communication is crucial in a job as it fosters understanding between parties',
+			icon: 'material-symbols:chat',
+			dark: true
+		},
+		{
+			title: 'Collaboration',
+			description: 'Working together with other people as a team to achieve a common goal.',
+			icon: 'carbon:collaborate',
+			dark: false
+		},
+		{
+			title: 'Adaptibility',
+			description:
+				'Adjusting to your needs quickly in an iterative process to reach our goal sooner.',
+			icon: 'iconoir:agile',
+			dark: false
+		}
+	];
 </script>
 
 <div class="flex h-screen flex-col items-center justify-center gap-16">
 	<div class="flex flex-row gap-6">
-		<button class="h-10 w-40 rounded bg-black text-slate-50 outline outline-2 outline-slate-300"
-			>Technical Skills</button
+		<button
+			class={`h-10 w-40 rounded text-slate-400 outline outline-2 outline-slate-300 ${
+				isTechnical ? 'bg-black text-slate-50 hover:bg-slate-900' : 'hover:bg-slate-100'
+			}`}
+			on:click|preventDefault={() => (isTechnical = true)}>Technical Skills</button
 		>
 
-		<button class="h-10 w-40 rounded text-slate-400 outline outline-2 outline-slate-300"
-			>Soft Skills</button
+		<button
+			class={`h-10 w-40 rounded text-slate-400 outline outline-2 outline-slate-300 ${
+				!isTechnical ? 'bg-black text-slate-50 hover:bg-slate-900' : 'hover:bg-slate-100'
+			}`}
+			on:click|preventDefault={() => (isTechnical = false)}>Soft Skills</button
 		>
 	</div>
 
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-		{#each technicalSkills as skill}
-			<SkillsCard {skill} />
-		{/each}
+		{#if isTechnical}
+			{#each technicalSkills as skill}
+				<SkillsCard {skill} />
+			{/each}
+		{:else}
+			{#each softSkills as skill}
+				<SkillsCard {skill} />
+			{/each}
+		{/if}
 	</div>
 </div>

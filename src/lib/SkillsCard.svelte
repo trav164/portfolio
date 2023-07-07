@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { fade, fly } from 'svelte/transition';
+
 	export let skill: SkillDetails;
 </script>
 
 <div
-	class={`flex flex-col gap-2 rounded p-6 outline outline-1 outline-slate-300 ${
+	class={`flex max-w-md flex-col gap-2 rounded p-6 outline outline-1 outline-slate-300 ${
 		skill.dark ? 'bg-black' : 'bg-none'
 	}`}
 >

@@ -3,7 +3,7 @@
 	import avatar from '$lib/assets/avatar.svg';
 </script>
 
-<div class="flex h-screen flex-col items-center justify-center">
+<div class="mx-auto flex h-screen flex-col items-center justify-center md:w-[600px]">
 	<img alt="avatar" class="h-64 w-64" src={avatar} />
 	<img alt="lewis travis text" class="" src={lewistravis} />
 
