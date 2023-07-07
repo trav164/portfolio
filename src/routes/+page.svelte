@@ -3,12 +3,13 @@
 	import Skills from '$lib/Skills.svelte';
 	import { currentPage } from '../page';
 
-	currentPage.subscribe((value) => {
+	currentPage.subscribe((value: string) => {
 		if (!value) return;
 		const el = document.querySelector(value);
 		if (!el) return;
+
 		el.scrollIntoView({
-			block: 'start',
+			block: 'center',
 			behavior: 'smooth'
 		});
 	});
@@ -20,7 +21,7 @@
 	</section>
 
 	<section id="skills">
-		<Skills/>
+		<Skills />
 	</section>
 
 	<section id="projects">
