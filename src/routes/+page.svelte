@@ -12,6 +12,9 @@
 			block: 'center',
 			behavior: 'smooth'
 		});
+
+		// reset current page just in case you scroll it won't let you click back to the same section
+		currentPage.set('');
 	});
 </script>
 

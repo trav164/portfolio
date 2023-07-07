@@ -6,6 +6,7 @@
 	import { page } from '$app/stores';
 	import toast, { Toaster } from 'svelte-french-toast';
 	import Navbar from '$lib/Navbar.svelte';
+	import 'iconify-icon';
 
 	inject({ mode: dev ? 'development' : 'production' });
 
@@ -27,6 +28,6 @@
 
 <Toaster />
 <Navbar />
-<div class="mx-auto flex w-96 flex-col gap-12 p-6 sm:w-[600px]">
+<div class="mx-auto flex w-96 flex-col gap-12 p-6 sm:w-[900px]">
 	<slot />
 </div>

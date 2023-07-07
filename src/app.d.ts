@@ -9,6 +9,13 @@ declare global {
 		}
 		// interface Platform {}
 	}
+
+	interface SkillDetails {
+		title: string;
+		description: string;
+		icon: string;
+		dark?: boolean;
+	}
 }
 
 export { };
