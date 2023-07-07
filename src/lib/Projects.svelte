@@ -32,7 +32,11 @@
 				project.highlight ? 'bg-black text-slate-50' : ''
 			}`}
 		>
-			<span class="text-2xl font-bold">{project.title}</span>
+			<a href={project.url} class="flex flex-row items-center gap-2 hover:underline">
+				<span class="text-2xl font-bold">{project.title}</span>
+				<iconify-icon icon="mdi:open-in-new" style="font-size: 24px" />
+			</a>
+
 			<p class="flex flex-1">{project.description}</p>
 
 			<ul
