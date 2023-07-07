@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from '$lib/Hero.svelte';
+	import Projects from '$lib/Projects.svelte';
 	import Skills from '$lib/Skills.svelte';
 	import { currentPage } from '../page';
 
@@ -28,7 +29,7 @@
 	</section>
 
 	<section id="projects">
-		<h2>Projects</h2>
+		<Projects />
 	</section>
 </main>
 
