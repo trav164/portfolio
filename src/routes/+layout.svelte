@@ -6,6 +6,7 @@
 	import { page } from '$app/stores';
 	import toast, { Toaster } from 'svelte-french-toast';
 	import Navbar from '$lib/Navbar.svelte';
+	import Hero from '$lib/Hero.svelte';
 
 	inject({ mode: dev ? 'development' : 'production' });
 	const flash = initFlash(page);
@@ -26,4 +27,6 @@
 
 <Toaster />
 <Navbar />
-<slot />
+<div class="mx-auto flex w-96 flex-col gap-12 p-6 sm:w-[600px]">
+	<slot />
+</div>
