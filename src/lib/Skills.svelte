@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { fade } from 'svelte/transition';
 	import SkillsCard from './SkillsCard.svelte';
 
 	let isTechnical = true;
@@ -62,11 +63,15 @@
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
 		{#if isTechnical}
 			{#each technicalSkills as skill}
-				<SkillsCard {skill} />
+				<div in:fade={{ delay: 500 }} out:fade>
+					<SkillsCard {skill} />
+				</div>
 			{/each}
 		{:else}
 			{#each softSkills as skill}
-				<SkillsCard {skill} />
+				<div in:fade={{ delay: 500 }} out:fade>
+					<SkillsCard {skill} />
+				</div>
 			{/each}
 		{/if}
 	</div>

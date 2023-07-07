@@ -19,7 +19,7 @@
 		>{skill.title}</span
 	>
 	<p
-		class={`font-thin leading-tight text-slate-600 ${skill.dark ? 'text-slate-200' : 'text-black'}`}
+		class={`font-thin leading-tight text-slate-600 ${skill.dark ? 'text-slate-100' : 'text-black'}`}
 	>
 		{skill.description}
 	</p>

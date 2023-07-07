@@ -7,7 +7,6 @@
 	import toast, { Toaster } from 'svelte-french-toast';
 	import Navbar from '$lib/Navbar.svelte';
 	import 'iconify-icon';
-	import Footer from '$lib/Footer.svelte';
 
 	inject({ mode: dev ? 'development' : 'production' });
 
@@ -32,4 +31,3 @@
 <div class="mx-auto flex w-96 flex-col gap-12 p-6 sm:w-[900px]">
 	<slot />
 </div>
-<!-- <Footer /> -->

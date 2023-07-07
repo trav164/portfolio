@@ -10,6 +10,7 @@
 <div
 	class="fixed flex w-full items-center justify-center gap-6 bg-slate-50 py-6 font-bricolage text-xl text-slate-600"
 >
+	<h1 class="text-black">{$currentPage}</h1>
 	<a class="font-bold text-black" href="/" on:click|preventDefault={() => scrollToPage('#home')}
 		>home</a
 	>

@@ -6,17 +6,17 @@
 	import { currentPage } from '../page';
 
 	currentPage.subscribe((value: string) => {
+		// reset current page just in case you scroll it won't let you click back to the same section
+		// currentPage.set('');
 		if (!value) return;
-		const el = document.querySelector(value);
+		let el = document.querySelector(value);
+
 		if (!el) return;
 
 		el.scrollIntoView({
 			block: 'center',
 			behavior: 'smooth'
 		});
-
-		// reset current page just in case you scroll it won't let you click back to the same section
-		currentPage.set('');
 	});
 </script>
 
