@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Hero from '$lib/Hero.svelte';
+	import Skills from '$lib/Skills.svelte';
 	import { currentPage } from '../page';
 
 	currentPage.subscribe((value) => {
@@ -14,12 +15,12 @@
 </script>
 
 <main class="">
-	<section id="home" class="mt-48">
+	<section id="home" class="">
 		<Hero />
 	</section>
 
 	<section id="skills">
-		<h2>Skills</h2>
+		<Skills/>
 	</section>
 
 	<section id="projects">
