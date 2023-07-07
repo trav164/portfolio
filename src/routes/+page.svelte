@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Contact from '$lib/Contact.svelte';
 	import Hero from '$lib/Hero.svelte';
 	import Projects from '$lib/Projects.svelte';
 	import Skills from '$lib/Skills.svelte';
@@ -30,6 +31,10 @@
 
 	<section id="projects">
 		<Projects />
+	</section>
+
+	<section id="contact">
+		<Contact />
 	</section>
 </main>
 

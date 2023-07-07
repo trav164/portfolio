@@ -18,7 +18,7 @@
 	<!-- svelte-ignore a11y-invalid-attribute -->
 	<a href="#" on:click|preventDefault={() => scrollToPage('#projects')}>projects</a>
 	<!-- svelte-ignore a11y-invalid-attribute -->
-	<a href="#" on:click|preventDefault={() => scrollToPage('#test')}>about</a>
+	<a href="#" on:click|preventDefault={() => scrollToPage('#about')}>about</a>
 	<!-- svelte-ignore a11y-invalid-attribute -->
-	<a href="#">contact</a>
+	<a href="#" on:click|preventDefault={() => scrollToPage('#contact')}>contact</a>
 </div>
