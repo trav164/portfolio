@@ -3,6 +3,7 @@
 	import Hero from '$lib/Hero.svelte';
 	import Projects from '$lib/Projects.svelte';
 	import Skills from '$lib/Skills.svelte';
+	import { onMount } from 'svelte';
 	import { currentPage } from '../page';
 
 	currentPage.subscribe((value: string) => {
@@ -17,6 +18,10 @@
 			block: 'center',
 			behavior: 'smooth'
 		});
+	});
+
+	onMount(() => {
+		currentPage.set('#home');
 	});
 </script>
 
