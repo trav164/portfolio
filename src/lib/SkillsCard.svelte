@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class={`flex h-72 max-h-96 max-w-md flex-col gap-2 rounded p-6 outline outline-1 outline-slate-300 ${
+	class={`flex h-auto max-w-md flex-col flex-wrap gap-2 rounded p-6 outline outline-1 outline-slate-300 md:h-72 ${
 		skill.dark ? 'bg-black' : 'bg-none'
 	}`}
 >

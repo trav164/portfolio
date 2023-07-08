@@ -25,7 +25,7 @@
 	});
 </script>
 
-<main class="">
+<main class="flex flex-col space-y-12">
 	<section id="home" class="">
 		<Hero />
 	</section>
@@ -46,6 +46,5 @@
 <style>
 	section {
 		min-height: 100vh;
-		height: auto;
 	}
 </style>
