@@ -16,6 +16,34 @@
 			description: 'Creating robust APIs to meet the needs of any of your projects.',
 			icon: 'material-symbols:api',
 			dark: false
+		},
+		{
+			title: 'UX',
+			description:
+				'Tailoring your design with usability, and emotional impact in mind to create a meaningful and enjoyable experience.',
+			icon: 'mdi:design',
+			dark: false
+		},
+		{
+			title: 'Databases',
+			description:
+				'Proficiency in designing, managing, and querying data structures to efficiently store, retrieve, and manipulate information for various applications and systems.',
+			icon: 'material-symbols:database-outline',
+			dark: false
+		},
+		{
+			title: 'Source Control',
+			description:
+				'Source control allows me to efficiently track and manage my code changes, ensuring version control, history tracking, and seamless collaboration with other developers.',
+			icon: 'material-symbols:database-outline',
+			dark: false
+		},
+		{
+			title: 'Testing',
+			description:
+				'Testing allows me to systematically evaluate my code, ensuring its quality, reliability, and functionality meet the desired standards and requirements.',
+			icon: 'mdi:bug',
+			dark: false
 		}
 	];
 
@@ -38,6 +66,27 @@
 			description:
 				'Adjusting to your needs quickly in an iterative process to reach our goal sooner.',
 			icon: 'iconoir:agile',
+			dark: false
+		},
+		{
+			title: 'Critical Thinking',
+			description:
+				'Able to identify, analyze, and solve problems systematically instead of relying on intuition and instinct.',
+			icon: 'mdi:head-thinking',
+			dark: false
+		},
+		{
+			title: 'Leadership',
+			description:
+				'Ability to inspire people, manage conflicts, give clear feedback, mentor subordinates, and lead projects.',
+			icon: 'fluent-mdl2:team-favorite',
+			dark: false
+		},
+		{
+			title: 'Work Ethic',
+			description:
+				'A strong work ethic is dedicated, motivated, and committed to their roles and takes pleasure from achieving success.',
+			icon: 'icon-park-outline:battery-working-one',
 			dark: false
 		}
 	];
