@@ -92,7 +92,7 @@
 	];
 </script>
 
-<div class="flex h-screen flex-col items-center justify-center gap-16">
+<div class="flex h-[100vh] flex-col items-center justify-center gap-16">
 	<div class="flex flex-row gap-6">
 		<button
 			class={`h-10 w-40 rounded text-slate-400 outline outline-2 outline-slate-300 ${

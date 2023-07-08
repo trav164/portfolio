@@ -25,22 +25,22 @@
 	];
 </script>
 
-<div class="flex h-screen flex-col items-center justify-center gap-16">
+<div class="flex h-[100vh] flex-col items-center justify-center gap-16">
 	{#each projects as project}
 		<div
-			class={`flex h-56 max-h-72 w-full flex-col gap-4 rounded p-6 outline outline-1 outline-slate-300 ${
+			class={`flex h-auto w-full flex-col gap-4 rounded p-6 outline outline-1 outline-slate-300 md:h-56 ${
 				project.highlight ? 'bg-black text-slate-50' : ''
 			}`}
 		>
-			<a href={project.url} class="flex flex-row items-center gap-2 hover:underline">
-				<span class="text-2xl font-bold">{project.title}</span>
+			<a href={project.url} class="flex items-center gap-2 hover:underline">
+				<span class="text-xl font-bold md:text-2xl">{project.title}</span>
 				<iconify-icon icon="mdi:open-in-new" style="font-size: 24px" />
 			</a>
 
 			<p class="flex flex-1">{project.description}</p>
 
 			<ul
-				class={`flex flex-row items-center gap-3 ${
+				class={`flex flex-wrap items-center gap-3 md:flex-row  ${
 					!project.highlight ? 'text-slate-500' : 'text-slate-200'
 				}`}
 			>
