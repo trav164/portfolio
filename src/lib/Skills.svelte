@@ -92,7 +92,7 @@
 	];
 </script>
 
-<div class="flex h-[100vh] flex-col items-center justify-center gap-16">
+<div class="flex h-screen flex-col items-center justify-center gap-16">
 	<div class="flex flex-row gap-6">
 		<button
 			class={`h-10 w-40 rounded text-slate-400 outline outline-2 outline-slate-300 ${
@@ -112,15 +112,15 @@
 	<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
 		{#if isTechnical}
 			{#each technicalSkills as skill}
-				<div in:fade={{ delay: 500 }} out:fade>
-					<SkillsCard {skill} />
-				</div>
+				<!-- <div in:fade={{ delay: 500 }} out:fade> -->
+				<SkillsCard {skill} />
+				<!-- </div> -->
 			{/each}
 		{:else}
 			{#each softSkills as skill}
-				<div in:fade={{ delay: 500 }} out:fade>
-					<SkillsCard {skill} />
-				</div>
+				<!-- <div in:fade={{ delay: 500 }} out:fade> -->
+				<SkillsCard {skill} />
+				<!-- </div> -->
 			{/each}
 		{/if}
 	</div>

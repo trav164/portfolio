@@ -25,7 +25,7 @@
 	});
 </script>
 
-<main class="flex flex-col space-y-12">
+<main class="flex flex-col space-y-96 md:space-y-0">
 	<section id="home" class="">
 		<Hero />
 	</section>

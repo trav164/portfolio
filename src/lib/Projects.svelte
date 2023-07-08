@@ -25,17 +25,19 @@
 	];
 </script>
 
-<div class="flex h-[100vh] flex-col items-center justify-center gap-16">
+<div class="flex h-screen flex-col items-center justify-center gap-16">
 	{#each projects as project}
 		<div
-			class={`flex h-auto w-full flex-col gap-4 rounded p-6 outline outline-1 outline-slate-300 md:h-56 ${
-				project.highlight ? 'bg-black text-slate-50' : ''
+			class={`flex h-auto w-full flex-col gap-4 rounded p-6 outline outline-1 outline-slate-300 hover:outline-2 hover:outline-slate-400 md:h-56 ${
+				project.highlight ? 'bg-black text-slate-50 hover:bg-slate-900' : ''
 			}`}
 		>
-			<a href={project.url} class="flex items-center gap-2 hover:underline">
-				<span class="text-xl font-bold md:text-2xl">{project.title}</span>
+			<div class="flex items-center gap-2">
+				<span class="text-xl font-bold md:text-2xl"
+					><a class="hover:underline" href={project.url}>{project.title} </a></span
+				>
 				<iconify-icon icon="mdi:open-in-new" style="font-size: 24px" />
-			</a>
+			</div>
 
 			<p class="flex flex-1">{project.description}</p>
 
@@ -45,10 +47,13 @@
 				}`}
 			>
 				{#each project.technologies as tech, i}
-					<li class="text-sm">{tech}</li>
-					{#if i !== tech.length - 1}
-						#
-					{/if}
+					<li class="flex gap-24">
+						{i == project.technologies.length - 1 ? tech : `${tech} ●`}
+					</li>
+
+					<!-- <li class="text-sm">{tech}</li>
+					<p>{tech.length}</p>
+					{#if i !== tech.length - 1}/{/if} -->
 				{/each}
 			</ul>
 		</div>
