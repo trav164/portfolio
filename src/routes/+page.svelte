@@ -46,5 +46,6 @@
 <style>
 	section {
 		min-height: 100vh;
+		height: auto;
 	}
 </style>

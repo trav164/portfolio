@@ -109,7 +109,7 @@
 		>
 	</div>
 
-	<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+	<div class="grid grid-cols-2 gap-4 md:grid-cols-3">
 		{#if isTechnical}
 			{#each technicalSkills as skill}
 				<div in:fade={{ delay: 500 }} out:fade>
