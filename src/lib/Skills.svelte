@@ -8,7 +8,7 @@
 		{
 			title: 'Frontend Development',
 			description: 'I love to bring your ideas to life, coding bespoke websites from scratch.',
-			icon: 'material-symbols:html',
+			icon: 'icomoon-free:html-five',
 			dark: true
 		},
 		{
@@ -35,7 +35,7 @@
 			title: 'Source Control',
 			description:
 				'Source control allows me to efficiently track and manage my code changes, ensuring version control, history tracking, and seamless collaboration with other developers.',
-			icon: 'material-symbols:database-outline',
+			icon: 'mdi:git',
 			dark: false
 		},
 		{
@@ -92,7 +92,7 @@
 	];
 </script>
 
-<div class="flex h-screen flex-col items-center justify-center gap-16">
+<div class="flex h-screen flex-col items-center justify-center gap-16 bg-red-200">
 	<div class="flex flex-row gap-6">
 		<button
 			class={`h-10 w-40 rounded text-slate-400 outline outline-2 outline-slate-300 ${

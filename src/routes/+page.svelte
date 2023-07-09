@@ -14,8 +14,14 @@
 
 		if (!el) return;
 
+		let position: ScrollLogicalPosition = 'start';
+
+		if (window.innerWidth < 800) {
+			position = 'start';
+		}
+
 		el.scrollIntoView({
-			block: 'center',
+			block: position,
 			behavior: 'smooth'
 		});
 	});

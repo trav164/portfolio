@@ -5,7 +5,7 @@
 
 <div class="mx-auto flex h-screen flex-col items-center justify-center md:w-[600px]">
 	<img alt="avatar" class="h-64 w-64" src={avatar} />
-	<img alt="lewis travis text" class="" src={lewistravis} />
+	<img id="logo" alt="lewis travis text" src={lewistravis} />
 
 	<p class="text-center text-slate-600">
 		I'm a skilled web developer specializing in JavaScript, HTML, and Tailwind CSS. My expertise in
