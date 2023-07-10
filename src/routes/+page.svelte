@@ -31,7 +31,25 @@
 	});
 </script>
 
-<main class="flex flex-col space-y-96 md:space-y-0">
+<div
+	class="snap flex h-screen w-screen snap-y snap-mandatory flex-col overflow-scroll overflow-x-hidden"
+>
+	<div class="mx-auto flex w-96 flex-col gap-12 p-6 md:w-[700px]">
+		<section id="home" class="flex h-screen snap-start items-center justify-center">
+			<Hero />
+		</section>
+
+		<section id="skills" class="flex h-screen snap-start items-center justify-center">
+			<Skills />
+		</section>
+
+		<!-- <section id="skills" class="flex h-screen snap-start items-center justify-center bg-blue-500">
+			<div class="p-6 text-9xl">2</div>
+		</section> -->
+	</div>
+</div>
+
+<!-- <main class="flex flex-col space-y-96 md:space-y-0">
 	<section id="home" class="">
 		<Hero />
 	</section>
@@ -53,4 +71,4 @@
 	section {
 		min-height: 100vh;
 	}
-</style>
+</style> -->

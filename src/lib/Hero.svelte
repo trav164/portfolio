@@ -3,7 +3,7 @@
 	import avatar from '$lib/assets/avatar.svg';
 </script>
 
-<div class="mx-auto flex h-screen flex-col items-center justify-center md:w-[600px]">
+<div class="flex flex-col items-center justify-center gap-2">
 	<img alt="avatar" class="h-64 w-64" src={avatar} />
 	<img id="logo" alt="lewis travis text" src={lewistravis} />
 
@@ -12,4 +12,8 @@
 		these technologies enables me to build dynamic and optimized web applications that deliver
 		exceptional user experiences.
 	</p>
+
+	<a href="#/#skills" class="mt-12 animate-bounce rounded text-slate-400"
+		><iconify-icon flip="vertical" icon="ri:arrow-up-line" style="font-size: 40px;" /></a
+	>
 </div>

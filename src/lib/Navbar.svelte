@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fly } from 'svelte/transition';
 	import { currentPage } from '../page';
 
 	const scrollToPage = (scrollTo: string) => {
