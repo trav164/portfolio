@@ -36,7 +36,7 @@
 >
 	{#each navItems as item}
 		<a
-			class={`${
+			class={`custom-hover ${
 				$currentPage === item.id
 					? 'font-bold text-black underline underline-offset-4'
 					: 'font-light text-slate-400 '
