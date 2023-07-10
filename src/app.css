@@ -3,11 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
+    /* @font-face {
         font-family: 'Bricolage Grotesque';
-        src: local('BricolageGrotesque-Regular-BF648bd5781d794') url('/fonts/bricolage-grotesque/BricolageGrotesque-Regular-BF648bd5781d794.otf');
+        src: local('BricolageGrotesque-Regular-BF648bd5781d794') url('/fonts/bricolage-grotesque/BricolageGrotesque-Regular-BF648bd5781d794.otf') format("otf");
         font-weight: normal;
         font-display: swap;
+    } */
+
+    @font-face {
+        font-family: 'Bricolage Grotesque', sans-serif;
+        font-family: 'Bricolage Grotesque 10pt', sans-serif;
+        font-family: 'Bricolage Grotesque 10pt Condensed', sans-serif;
+        font-family: 'Bricolage Grotesque 48pt', sans-serif;
+        font-family: 'Bricolage Grotesque 48pt Condensed', sans-serif;
+                                                
     }
 
     .custom-hover {

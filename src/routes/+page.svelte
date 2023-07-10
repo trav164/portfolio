@@ -32,6 +32,10 @@
 	});
 </script>
 
+<svelte:head>
+	<link href="https://fonts.cdnfonts.com/css/bricolage-grotesque" rel="stylesheet" />
+</svelte:head>
+
 <div
 	class="snap flex h-screen w-screen snap-y snap-mandatory flex-col overflow-scroll overflow-x-hidden scroll-smooth"
 >
