@@ -14,7 +14,7 @@
 
 			<div class="mt-8 flex flex-wrap justify-center gap-4">
 				<a
-					class="bg-brand text-light text-md block w-full rounded px-12 py-3 font-semibold shadow hover:contrast-125 focus:outline-none focus:ring sm:w-auto"
+					class="flex h-10 w-40 items-center justify-center rounded bg-black font-semibold text-slate-50 outline outline-2 outline-slate-300"
 					href="/"
 				>
 					Home

@@ -13,7 +13,7 @@
 		exceptional user experiences.
 	</p>
 
-	<a href="#/#skills" class="mt-12 animate-bounce rounded text-slate-400"
-		><iconify-icon flip="vertical" icon="ri:arrow-up-line" style="font-size: 40px;" /></a
-	>
+	<div class="mt-12 animate-bounce rounded text-slate-400">
+		<iconify-icon flip="vertical" icon="ri:arrow-up-line" style="font-size: 40px;" />
+	</div>
 </div>

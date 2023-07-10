@@ -3,13 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-    /* @font-face {
-        font-family: 'Bricolage Grotesque';
-        src: local('BricolageGrotesque-Regular-BF648bd5781d794') url('/fonts/bricolage-grotesque/BricolageGrotesque-Regular-BF648bd5781d794.otf') format("otf");
-        font-weight: normal;
-        font-display: swap;
-    } */
-
     @font-face {
         font-family: 'Bricolage Grotesque', sans-serif;
         font-family: 'Bricolage Grotesque 10pt', sans-serif;
