@@ -10,7 +10,17 @@ module.exports = {
     colors: {
       ...colors,
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        blur: {
+          '0%': { filter: "blur(5px)" },
+          '100%': { filter: "blur(0px)" },
+        }
+      },
+      animation: {
+        blur: 'blur 2s linear',
+      }
+    },
   },
   plugins: [],
 }

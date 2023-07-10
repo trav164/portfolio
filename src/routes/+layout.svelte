@@ -27,8 +27,7 @@
 </script>
 
 <Toaster />
-<Navbar />
-<slot />
-<!-- <div class="mx-auto flex w-96 flex-col gap-12 p-6 sm:w-[900px]">
+<div class="animate-blur">
+	<Navbar />
 	<slot />
-</div> -->
+</div>
