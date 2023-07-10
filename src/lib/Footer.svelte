@@ -15,3 +15,5 @@
 		<iconify-icon icon="mdi:github" style="font-size: 32px" />
 	</a>
 </div>
+
+<p class="text-center text-slate-400">Copyright &copy; 2023 Lewis Travis. All Rights Reserved.</p>

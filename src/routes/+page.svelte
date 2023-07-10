@@ -5,6 +5,7 @@
 	import Skills from '$lib/Skills.svelte';
 	import { onMount } from 'svelte';
 	import { currentPage } from '../page';
+	import Timeline from '$lib/Timeline.svelte';
 
 	currentPage.subscribe((value: string) => {
 		// reset current page just in case you scroll it won't let you click back to the same section
@@ -32,7 +33,7 @@
 </script>
 
 <div
-	class="snap flex h-screen w-screen snap-y snap-mandatory flex-col overflow-scroll overflow-x-hidden"
+	class="snap flex h-screen w-screen snap-y snap-mandatory flex-col overflow-scroll overflow-x-hidden scroll-smooth"
 >
 	<div class="mx-auto flex w-96 flex-col gap-12 p-6 md:w-[700px]">
 		<section id="home" class="flex h-screen snap-start items-center justify-center">
@@ -41,6 +42,18 @@
 
 		<section id="skills" class="flex h-screen snap-start items-center justify-center">
 			<Skills />
+		</section>
+
+		<section id="timeline" class="flex h-screen snap-start items-center justify-center">
+			<Timeline />
+		</section>
+
+		<section id="projects" class="flex h-screen snap-start items-center justify-center">
+			<Projects />
+		</section>
+
+		<section id="contact" class="flex h-screen snap-start items-center justify-center">
+			<Contact />
 		</section>
 
 		<!-- <section id="skills" class="flex h-screen snap-start items-center justify-center bg-blue-500">
