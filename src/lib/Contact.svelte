@@ -2,9 +2,9 @@
 	import Footer from './Footer.svelte';
 </script>
 
-<div class="mx-auto flex h-screen flex-col items-center justify-center gap-8">
-	<span class="w-full text-center text-2xl font-semibold">get in touch</span>
-	<p class="-mt-6 w-full text-center font-thin">
+<div class="mx-auto flex h-screen flex-col items-center justify-center gap-6">
+	<span class="hidden w-full text-center text-2xl font-semibold md:flex">get in touch</span>
+	<p class="-mt-6 hidden w-full text-center font-thin md:flex">
 		Drop me a line and I'll get back to you as soon as possible.
 	</p>
 	<input

@@ -39,8 +39,8 @@
 <div
 	class="snap flex h-screen w-screen snap-y snap-mandatory flex-col overflow-scroll overflow-x-hidden scroll-smooth"
 >
-	<div class="mx-auto flex w-96 flex-col gap-12 p-6 md:w-[700px]">
-		<section id="home" class="flex h-screen snap-start items-center justify-center">
+	<div class="mx-auto flex w-80 flex-col gap-12 p-6 md:w-[700px]">
+		<section id="home" class="flex h-screen snap-start items-center justify-center pt-36">
 			<Hero />
 		</section>
 

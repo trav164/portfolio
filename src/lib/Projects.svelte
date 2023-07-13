@@ -32,7 +32,7 @@
 				<iconify-icon icon="mdi:open-in-new" style="font-size: 24px" />
 			</div>
 
-			<p class="flex flex-1">{project.description}</p>
+			<p class="hidden flex-1 md:flex">{project.description}</p>
 
 			<ul
 				class={`flex flex-wrap items-center gap-3 md:flex-row  ${
