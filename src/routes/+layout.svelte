@@ -1,12 +1,9 @@
 <script>
 	import '../app.css';
-	import { dev } from '$app/environment';
-	import { inject } from '@vercel/analytics';
 	import { initFlash } from 'sveltekit-flash-message/client';
 	import { page } from '$app/stores';
 	import toast, { Toaster } from 'svelte-french-toast';
 
-	inject({ mode: dev ? 'development' : 'production' });
 	const flash = initFlash(page);
 
 	$: if ($flash) {

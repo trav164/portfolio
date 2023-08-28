@@ -1,7 +1,6 @@
 import { fail, type Actions } from '@sveltejs/kit';
 import { z } from 'zod';
 import { superValidate } from 'sveltekit-superforms/server';
-import sgMail from '@sendgrid/mail';
 import { redirect } from 'sveltekit-flash-message/server';
 import type { PageServerLoad } from './$types';
 import { SECRET_SENDGRID_API_KEY } from '$env/static/private';
@@ -44,24 +43,42 @@ export const actions: Actions = {
             })
         }
 
-        sgMail.setApiKey(SECRET_SENDGRID_API_KEY);
         const msg = {
-            to: 'lewis@lewistravis.co.uk', // Change to your recipient
+            personalizations: [
+                {
+                    to: [{
+                        // This needs updating to helens email.
+                        email: 'travis164@gmail.com',
+                    }],
+                }
+            ],
             from: {
-                name: 'Portfolio Message',
-                email: `lewis@lewistravis.co.uk`
-            }, // Change to your verified sender
-            subject: 'You have recieved a message from your portfolio',
-            html: `
-            FROM: ${form.data.email}
-            <br>
-            MESSAGE: ${form.data.message}
-            `,
+                // this needs to be added to sendgrid as a verified email address.
+                email: 'lewis@lewistravis.co.uk'
+            },
+            subject: "You have recieved a message from your website",
+            content: [
+                {
+                    type: 'text/html',
+                    value: `
+                    FROM: ${form.data.email}
+                    <br>
+                    MESSAGE: ${form.data.message}
+                    `,
+                }
+            ],
         }
 
-        const res = await sgMail.send(msg);
+        const res = await fetch(`https://api.sendgrid.com/v3/mail/send`, {
+            headers: {
+                'Authorization': `Bearer ${SECRET_SENDGRID_API_KEY}`,
+                'Content-Type': 'application/json',
+            },
+            method: 'POST',
+            body: JSON.stringify(msg)
+        });
 
-        if (res[0].statusCode === 202) {
+        if (res.status === 202) {
             const message = { type: 'success', message: 'Your message was sent successfully!' } as const;
             throw redirect('/', message, event);
         }
