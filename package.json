@@ -35,6 +35,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"svelte-french-toast": "^1.0.4-beta.0"
+		"rough-notation": "^0.5.1"
 	}
 }
