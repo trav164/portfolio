@@ -3,26 +3,29 @@
 	import { annotate, annotationGroup } from 'rough-notation';
 	import avatar from '$lib/images/avatar.svg';
 	import Projects from '$lib/projects.svelte';
+	import type { PageData } from './$types';
 
-	onMount(() => {
-		const name = annotate(document.querySelector('#name'), {
-			type: 'highlight',
-			color: '#D0BFFF',
-			multiline: false,
-			padding: 25
-		});
+	export let data: PageData;
 
-		const avatar = annotate(document.querySelector('#avatar'), {
-			type: 'bracket',
-			color: '#D0BFFF',
-			padding: 25
-		});
+	// onMount(() => {
+	// 	const name = annotate(document.querySelector('#name'), {
+	// 		type: 'highlight',
+	// 		color: '#D0BFFF',
+	// 		multiline: false,
+	// 		padding: 25
+	// 	});
 
-		const simple = annotate(document.querySelector('#simple'), { type: 'underline' });
+	// 	const avatar = annotate(document.querySelector('#avatar'), {
+	// 		type: 'bracket',
+	// 		color: '#D0BFFF',
+	// 		padding: 25
+	// 	});
 
-		const ag = annotationGroup([avatar, name, simple]);
-		// ag.show();
-	});
+	// 	const simple = annotate(document.querySelector('#simple'), { type: 'underline' });
+
+	// 	const ag = annotationGroup([avatar, name, simple]);
+	// 	// ag.show();
+	// });
 </script>
 
 <svelte:head>
@@ -66,7 +69,13 @@
 
 <!-- PROJECTS -->
 <section>
-	<Projects />
+	<div class="flex flex-col gap-6">
+		<h3 class="text-3xl font-semibold">Projects</h3>
+		<p class="-mt-4 text-gray-500 italic">Just a few little side projects to keep me busy</p>
+		{#each data.projects as project}
+			<Projects title={project.title} content={project.content} tech={project.tech} />
+		{/each}
+	</div>
 </section>
 
 <!-- <section class="flex flex-col-reverse md:flex-row justify-center gap-8 w-full">
