@@ -17,6 +17,11 @@ export const load = (async () => {
             title: 'Password Generator',
             content: 'A simple password generator with custom parameters inspired by a challenge on Frontend Mentor. This project was a collaboration with Amrit Nagi over lunch.',
             tech: ['TS', 'Sveltekit', 'Tailwind']
+        },
+        {
+            title: 'Spot The Intro',
+            content: 'Enhancing Spot The Intro game created by Cheatwell Games by automating song searching.',
+            tech: ['TS', 'Sveltekit', 'Tailwind', 'Cloudlfare Workers', 'Supabase', 'Vercel']
         }
     ] as Project[];
 

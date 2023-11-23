@@ -6,20 +6,20 @@
 	export let title: string;
 	export let content: string;
 	export let tech: string[];
+	export let dark: boolean;
 </script>
 
 <button
 	on:click={() => (accordionOpen = !accordionOpen)}
-	class="bg-gray-800 p-6 mt-2 rounded z-10 flex items-center justify-between cursor-pointer hover:bg-gray-700 {accordionOpen
-		? 'rounded-b-none'
-		: ''}"
+	class="p-6 mt-2 rounded z-10 flex items-center justify-between cursor-pointer shadow
+    {dark ? 'bg-black hover:bg-zinc-800' : 'bg-white hover:bg-gray-200'}
+    {accordionOpen ? 'rounded-b-none' : ''}"
 >
-	<span class="text-white font-semibold text-xl">{title}</span>
+	<span class="{dark ? 'text-white' : ''} font-semibold text-xl">{title}</span>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		class="icon icon-tabler icon-tabler-triangle-filled text-gray-100 {accordionOpen
-			? ''
-			: 'rotate-180'}"
+		class="icon icon-tabler icon-tabler-triangle-filled
+        {dark ? 'text-white' : ''} {accordionOpen ? 'text-gray-200' : 'rotate-180'}"
 		width="24"
 		height="24"
 		viewBox="0 0 24 24"
@@ -40,7 +40,7 @@
 	<div
 		in:fly={{ y: -50, duration: 500 }}
 		out:fly={{ y: -50, duration: 500 }}
-		class="bg-gray-900 text-white -mt-6 p-6 rounded rounded-t-none"
+		class="{dark ? 'bg-white' : 'bg-gray-200 text-gray-800'} -mt-6 p-6 rounded rounded-t-none"
 	>
 		<p>
 			{content}

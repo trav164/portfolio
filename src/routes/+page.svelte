@@ -72,8 +72,14 @@
 	<div class="flex flex-col gap-6">
 		<h3 class="text-3xl font-semibold">Projects</h3>
 		<p class="-mt-4 text-gray-500 italic">Just a few little side projects to keep me busy</p>
-		{#each data.projects as project}
-			<Projects title={project.title} content={project.content} tech={project.tech} />
+		{#each data.projects as project, i}
+			<!-- Set first project as dark -->
+			<Projects
+				dark={i === 0}
+				title={project.title}
+				content={project.content}
+				tech={project.tech}
+			/>
 		{/each}
 	</div>
 </section>
