@@ -16,7 +16,14 @@ module.exports = {
       mid: "#B8BFC6",
       light: "#FFFFFF"
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'avatar': "url('/src/lib/images/avatar.svg')"
+      },
+      backgroundOpacity: {
+        '20': '0.2'
+      }
+    },
   },
   plugins: [],
 }
