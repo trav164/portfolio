@@ -3,10 +3,22 @@
 
 	export let accordionOpen = false;
 
+	export let id: number;
 	export let title: string;
 	export let content: string;
 	export let tech: string[];
 	export let dark: boolean;
+
+	import { onMount } from 'svelte';
+	import { annotate, annotationGroup } from 'rough-notation';
+
+	onMount(() => {
+		const tech = annotate(document.querySelector('#tech'), {
+			type: 'box',
+			color: '#D9FF72'
+		});
+		tech.show();
+	});
 </script>
 
 <button
@@ -42,8 +54,14 @@
 		out:fly={{ y: -50, duration: 500 }}
 		class="{dark ? 'bg-white' : 'bg-gray-200 text-gray-800'} -mt-6 p-6 rounded rounded-t-none"
 	>
-		<p>
+		<p class="text-lg leading-loose">
 			{content}
 		</p>
+
+		<ul id="tech" class="flex flex-wrap gap-4 mt-6 font-semibold">
+			{#each tech as t}
+				<li>{t}</li>
+			{/each}
+		</ul>
 	</div>
 {/if}
