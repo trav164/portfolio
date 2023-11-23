@@ -17,7 +17,11 @@
 			type: 'box',
 			color: '#D9FF72'
 		});
-		tech.show();
+
+		// Delay drawing of this part until hero has finished
+		setTimeout(() => {
+			tech.show();
+		}, 2000);
 	});
 </script>
 

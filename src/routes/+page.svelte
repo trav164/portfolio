@@ -21,12 +21,17 @@
 			padding: 25
 		});
 
-		const portfolio = annotate(document.querySelector('#portfolio'), {
-			type: 'circle',
+		const softwareDeveloper = annotate(document.querySelector('#softwareDeveloper'), {
+			type: 'highlight',
 			color: '#D0BFFF'
 		});
 
-		const ag = annotationGroup([lewis, avatar, portfolio]);
+		const delivering = annotate(document.querySelector('#delivering'), {
+			type: 'underline',
+			color: '#FF7293'
+		});
+
+		const ag = annotationGroup([lewis, avatar, softwareDeveloper, delivering]);
 		ag.show();
 	});
 </script>
@@ -45,9 +50,10 @@
 		<h1 class="font-bold text-5xl leading-relaxed">Hi! I'm <span id="lewis">Lewis.</span></h1>
 
 		<p class="tracking-wider leading-relaxed text-xl -mt-4">
-			I've created this simple <span id="portfolio">portfolio</span> to learn new skills and expand my
-			knowledge as a software developer. I'm always keen to learn new technology and enjoy working in
-			customer-oriented environments delivering products from start to finish.
+			I've created this simple portfolio to learn new skills and expand my knowledge as a <span
+				id="softwareDeveloper">software developer</span
+			>. I'm always keen to learn new technology and enjoy working in customer-oriented environments
+			<span id="delivering">delivering</span> products from start to finish.
 		</p>
 
 		<div class="w-full items-center justify-center md:justify-start flex gap-4">
