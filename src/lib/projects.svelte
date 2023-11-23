@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { fly } from 'svelte/transition';
 
-	let accordionOpen = false;
+	export let accordionOpen = false;
 
 	export let title: string;
 	export let content: string;

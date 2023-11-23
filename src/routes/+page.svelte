@@ -76,6 +76,7 @@
 			<!-- Set first project as dark -->
 			<Projects
 				dark={i === 0}
+				accordionOpen={i === 0}
 				title={project.title}
 				content={project.content}
 				tech={project.tech}
