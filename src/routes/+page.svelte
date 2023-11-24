@@ -87,6 +87,7 @@
 			<!-- Set first project as dark -->
 			<Projects
 				id={i}
+				link={project.link}
 				dark={i === 0}
 				accordionOpen={i === 0}
 				title={project.title}

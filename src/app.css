@@ -4,9 +4,10 @@
 @tailwind utilities;
 
 * {
-    @apply transition-all duration-300;
+    @apply transition-all duration-500;
 }
 
-html, body {
+html,
+body {
     @apply bg-gray-100 text-black font-poppins;
 }

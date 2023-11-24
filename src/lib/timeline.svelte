@@ -60,11 +60,6 @@
 			<div class="text-xl text-zinc-500">Internship</div>
 		</div>
 		<!-- Content -->
-		<div class="leading-loose">
-			Worked on several projects, focused mainly on front-end development. Currently working as a
-			lead front-end software developer using Angular in tandem with the technical lead whilst also
-			upskilling in backend technologies in order become a more well-rounded developer.
-		</div>
 	</div>
 
 	<!-- ITEM 4 -->
@@ -82,10 +77,5 @@
 			<div class="text-xl text-zinc-500">Computer Systems (Forensics & Security)</div>
 		</div>
 		<!-- Content -->
-		<div class="leading-loose">
-			Worked on several projects, focused mainly on front-end development. Currently working as a
-			lead front-end software developer using Angular in tandem with the technical lead whilst also
-			upskilling in backend technologies in order become a more well-rounded developer.
-		</div>
 	</div>
 </div>

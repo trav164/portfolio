@@ -7,10 +7,12 @@
 	export let title: string;
 	export let content: string;
 	export let tech: string[];
+	export let link: string;
 	export let dark: boolean;
 
 	import { onMount } from 'svelte';
 	import { annotate } from 'rough-notation';
+	import Icon from '@iconify/svelte';
 
 	onMount(() => {
 		const tech = annotate(document.querySelector('#tech'), {
@@ -32,11 +34,17 @@
     {dark ? 'bg-black hover:bg-zinc-800' : 'bg-white hover:bg-gray-200'}
     {accordionOpen ? 'rounded-b-none' : ''}"
 >
-	<span class="{dark ? 'text-white' : ''} font-semibold text-xl">{title}</span>
+	<a
+		href={link}
+		class="{dark
+			? 'text-white'
+			: ''} font-semibold text-xl lowercase flex items-center gap-2 hover:underline"
+		>{title} <Icon style="font-size: 16px;" icon="mdi:open-in-new" /></a
+	>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		class="icon icon-tabler icon-tabler-triangle-filled
-        {dark ? 'text-white' : ''} {accordionOpen ? 'text-gray-200' : 'rotate-180'}"
+        {dark ? 'text-white' : ''} {accordionOpen ? '' : 'rotate-180'}"
 		width="24"
 		height="24"
 		viewBox="0 0 24 24"

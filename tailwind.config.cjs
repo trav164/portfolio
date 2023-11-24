@@ -9,6 +9,8 @@ module.exports = {
     },
     colors: {
       ...colors,
+      lime: '#D9FF72',
+      purple: '#D0BFFF',
     },
     extend: {
       backgroundImage: {
