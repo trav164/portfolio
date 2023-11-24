@@ -4,6 +4,7 @@
 	import avatar from '$lib/images/avatar.svg';
 	import Projects from '$lib/projects.svelte';
 	import type { PageData } from './$types';
+	import Timeline from '$lib/timeline.svelte';
 
 	export let data: PageData;
 
@@ -56,7 +57,7 @@
 			<span id="delivering">delivering</span> products from start to finish.
 		</p>
 
-		<div class="w-full items-center justify-center md:justify-start flex gap-4">
+		<div class="w-full items-center justify-center md:justify-start flex gap-4 md:mt-4 mt-8">
 			<a
 				class="bg-black text-gray-100 outline outline-2 outline-black px-8 py-4 rounded font-semibold text-sm hover:bg-zinc-800"
 				href="#"
@@ -95,6 +96,14 @@
 	</div>
 </section>
 
+<section>
+	<div class="flex flex-col gap-6">
+		<h3 class="text-3xl font-semibold">Career</h3>
+		<p class="-mt-4 text-gray-500 italic">My career thus far...</p>
+	</div>
+	<Timeline />
+</section>
+
 <!-- About me -->
 <section class="">
 	<div class="flex flex-col gap-6">
@@ -113,7 +122,7 @@
 			more of a "bassically challenged" enthusiast.
 		</p>
 
-		<p>
+		<p class="leading-loose">
 			So, whether I'm coaxing melodies from my bass or navigating the unpredictable dance floor of
 			the golf course, one thing is for sure—I'm on a perpetual quest for laughter, rhythm, and the
 			perfect swing.

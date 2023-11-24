@@ -10,12 +10,13 @@
 	export let dark: boolean;
 
 	import { onMount } from 'svelte';
-	import { annotate, annotationGroup } from 'rough-notation';
+	import { annotate } from 'rough-notation';
 
 	onMount(() => {
 		const tech = annotate(document.querySelector('#tech'), {
 			type: 'box',
-			color: '#D9FF72'
+			color: '#D9FF72',
+			padding: 10
 		});
 
 		// Delay drawing of this part until hero has finished
