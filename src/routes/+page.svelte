@@ -5,6 +5,7 @@
 	import Projects from '$lib/projects.svelte';
 	import type { PageData } from './$types';
 	import Timeline from '$lib/timeline.svelte';
+	import Skills from '$lib/skills.svelte';
 
 	export let data: PageData;
 
@@ -102,6 +103,14 @@
 		<p class="-mt-4 text-gray-500 italic">My career thus far...</p>
 	</div>
 	<Timeline />
+</section>
+
+<section>
+	<div class="flex flex-col gap-6">
+		<h3 class="text-3xl font-semibold">Skills</h3>
+		<p class="-mt-4 text-gray-500 italic">Just a few of the skills I've picked up along the way.</p>
+	</div>
+	<Skills />
 </section>
 
 <!-- About me -->
