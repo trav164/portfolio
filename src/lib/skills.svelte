@@ -1,9 +1,98 @@
 <script lang="ts">
-	let isSoft = false;
+	import Icon from '@iconify/svelte';
+	import { fly } from 'svelte/transition';
+
+	let isTech = true;
 
 	let handleChange = () => {
-		isSoft = !isSoft;
+		isTech = !isTech;
 	};
+
+	interface SkillDetails {
+		title: string;
+		description: string;
+		icon: string;
+		dark: boolean;
+	}
+
+	const technicalSkills: SkillDetails[] = [
+		{
+			title: 'Frontend Development',
+			description: 'I love to bring your ideas to life, coding bespoke websites from scratch.',
+			icon: 'icomoon-free:html-five',
+			dark: true
+		},
+		{
+			title: 'API Development',
+			description: 'Creating robust APIs to meet the needs of any of your projects.',
+			icon: 'material-symbols:api',
+			dark: false
+		},
+		{
+			title: 'UX',
+			description:
+				'Tailoring your design with usability, and emotional impact in mind to create an experience.',
+			icon: 'mdi:design',
+			dark: false
+		},
+		{
+			title: 'Databases',
+			description: 'Proficiency in designing, managing, and querying data structure. ',
+			icon: 'material-symbols:database-outline',
+			dark: false
+		},
+		{
+			title: 'Source Control',
+			description: 'Source control allows me to efficiently track and manage my code changes.',
+			icon: 'mdi:git',
+			dark: false
+		},
+		{
+			title: 'Testing',
+			description: 'Testing allows me to systematically evaluate my code.',
+			icon: 'mdi:bug',
+			dark: false
+		}
+	];
+
+	const softSkills: SkillDetails[] = [
+		{
+			title: 'Communication',
+			description: 'Crucial in a job as it fosters understanding between parties',
+			icon: 'material-symbols:chat',
+			dark: true
+		},
+		{
+			title: 'Collaboration',
+			description: 'Working together with other people as a team.',
+			icon: 'carbon:collaborate',
+			dark: false
+		},
+		{
+			title: 'Adaptibility',
+			description: 'Adjusting to your needs quickly in an iterative process.',
+			icon: 'iconoir:agile',
+			dark: false
+		},
+		{
+			title: 'Critical Thinking',
+			description: 'Able to identify, analyze, and solve problems systematically.',
+			icon: 'mdi:head-thinking',
+			dark: false
+		},
+		{
+			title: 'Leadership',
+			description: 'Ability to inspire, manage, mentor, and lead projects.',
+			icon: 'fluent-mdl2:team-favorite',
+			dark: false
+		},
+		{
+			title: 'Work Ethic',
+			description: 'A strong work ethic is dedicated, motivated, and committed.',
+			icon: 'icon-park-outline:battery-working-one',
+			dark: false
+		}
+	];
 </script>
 
 <div class="flex flex-col mt-8">
@@ -17,7 +106,7 @@
 				<!-- input -->
 				<input
 					on:change={handleChange}
-					value={isSoft}
+					value={isTech}
 					type="checkbox"
 					id="toggleB"
 					class="sr-only"
@@ -32,56 +121,42 @@
 		</label>
 	</div>
 
-	<div class="grid grid-cols-2 md:grid-cols-3 gap-4 -mt-4">
-		{#if isSoft}
-			<div class="p-6 bg-zinc-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-zinc-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-zinc-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-zinc-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-zinc-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-zinc-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
+	<div class="-mt-4">
+		{#if isTech}
+			<!-- Soft Skills -->
+			<div in:fly={{ x: -50, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				{#each technicalSkills as skill}
+					<div
+						class="p-6 rounded outline outline-2 outline-zinc-300 {skill.dark
+							? 'bg-black text-white'
+							: 'bg-zinc-200 text-black'}"
+					>
+						<div class="mb-4 {skill.dark ? 'text-white' : 'text-black'}">
+							<Icon style="font-size: 24px;" icon={skill.icon} />
+						</div>
+
+						<p class="font-semibold text-xl">{skill.title}</p>
+						<p class="mt-2">{skill.description}</p>
+					</div>
+				{/each}
 			</div>
 		{:else}
-			<div class="p-6 bg-emerald-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-emerald-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-emerald-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-emerald-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-emerald-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
-			</div>
-			<div class="p-6 bg-emerald-200 rounded outline outline-2 outline-zinc-300">
-				<p class="font-semibold">Title</p>
-				<p>Lorem ipsum dolor sit amet.</p>
+			<!-- Technical -->
+			<div in:fly={{ x: -50, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
+				{#each softSkills as skill}
+					<div
+						class="p-6 rounded outline outline-2 outline-zinc-300 {skill.dark
+							? 'bg-black text-white'
+							: 'bg-zinc-200 text-black'}"
+					>
+						<div class="mb-4 {skill.dark ? 'text-white' : 'text-black'}">
+							<Icon style="font-size: 24px;" icon={skill.icon} />
+						</div>
+
+						<p class="font-semibold text-xl">{skill.title}</p>
+						<p class="mt-2">{skill.description}</p>
+					</div>
+				{/each}
 			</div>
 		{/if}
 	</div>
