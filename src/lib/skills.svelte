@@ -1,12 +1,8 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import { annotate } from 'rough-notation';
+	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
-
-	let isTech = true;
-
-	let handleChange = () => {
-		isTech = !isTech;
-	};
 
 	interface SkillDetails {
 		title: string;
@@ -14,6 +10,23 @@
 		icon: string;
 		dark: boolean;
 	}
+
+	let isTech = true;
+
+	let handleChange = () => {
+		isTech = !isTech;
+	};
+
+	onMount(() => {
+		const toggle = annotate(document.querySelector('#toggle'), {
+			type: 'bracket',
+			brackets: ['left', 'right'],
+			color: 'black',
+			padding: 5
+		});
+
+		toggle.show();
+	});
 
 	const technicalSkills: SkillDetails[] = [
 		{
@@ -96,11 +109,10 @@
 </script>
 
 <div class="flex flex-col mt-8">
-	<!-- Toggle B -->
 	<div class="flex items-center justify-center w-full mb-12">
-		<label for="toggleB" class="flex items-center cursor-pointer">
+		<label id="toggle" for="toggleB" class="flex items-center cursor-pointer">
 			<!-- label -->
-			<div class=" text-black font-medium mr-4">Technical Skills</div>
+			<div class=" text-black mr-4 text-xl {isTech ? 'font-bold' : ''}">Technical</div>
 			<!-- toggle -->
 			<div class="relative">
 				<!-- input -->
@@ -117,7 +129,7 @@
 				<div class="dot absolute left-1 top-1 bg-[#d9ff72] w-6 h-6 rounded-full transition" />
 			</div>
 			<!-- label -->
-			<div class="ml-4 text-black font-medium">Soft Skills</div>
+			<div class="ml-4 text-black text-xl {!isTech ? 'font-bold' : ''}">Soft</div>
 		</label>
 	</div>
 

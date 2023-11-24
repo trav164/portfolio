@@ -11,6 +11,7 @@ module.exports = {
       ...colors,
       lime: '#D9FF72',
       purple: '#D0BFFF',
+      pink: '#FF7293'
     },
     extend: {
       backgroundImage: {
