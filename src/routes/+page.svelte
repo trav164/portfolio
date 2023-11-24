@@ -61,12 +61,12 @@
 		<div class="w-full items-center justify-center md:justify-start flex gap-4 md:mt-4 mt-8">
 			<a
 				class="bg-black text-gray-100 outline outline-2 outline-black px-8 py-4 rounded font-semibold text-sm hover:bg-zinc-800"
-				href="#"
+				href="https://www.linkedin.com/in/lewis-travis-43656ab5/"
 				aria-label="linkedin">LinkedIn</a
 			>
 			<a
 				class="outline outline-2 outline-gray-300 font-semibold text-sm rounded px-8 py-4 hover:bg-gray-200"
-				href="#"
+				href="https://github.com/trav164"
 				aria-label="linkedin">Github</a
 			>
 		</div>

@@ -126,12 +126,8 @@
 			<!-- Soft Skills -->
 			<div in:fly={{ x: 100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{#each technicalSkills as skill}
-					<div
-						class="p-6 rounded border-b-4 cursor-pointer {skill.dark
-							? 'bg-black text-white border-b-lime hover:bg-zinc-800'
-							: 'bg-white border-b-zinc-400 hover:border-b-purple hover:bg-zinc-200'}"
-					>
-						<div class="md:mb-12 mb-6 {skill.dark ? 'text-white' : 'text-black'}">
+					<div class="p-6 rounded shadow cursor-pointer bg-black text-white">
+						<div class="md:mb-12 mb-6 text-lime">
 							<Icon style="font-size: 24px;" icon={skill.icon} />
 						</div>
 
@@ -144,17 +140,13 @@
 			<!-- Technical -->
 			<div in:fly={{ x: -100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{#each softSkills as skill}
-					<div
-						class="p-6 rounded border-b-4 cursor-pointer {skill.dark
-							? 'bg-black text-white border-b-lime hover:bg-zinc-800'
-							: 'bg-white border-b-zinc-400 hover:border-b-purple hover:bg-zinc-200'}"
-					>
-						<div class="md:mb-12 mb-6 {skill.dark ? 'text-white' : 'text-black'}">
+					<div class="p-6 rounded shadow cursor-pointer bg-black text-white">
+						<div class="md:mb-12 mb-6 text-purple">
 							<Icon style="font-size: 24px;" icon={skill.icon} />
 						</div>
 
 						<p class="font-semibold text-xl">{skill.title}</p>
-						<p class="mt-2">{skill.description}</p>
+						<p class="mt-2 align-bottom">{skill.description}</p>
 					</div>
 				{/each}
 			</div>
@@ -166,6 +158,6 @@
 	/* Toggle B */
 	input:checked ~ .dot {
 		transform: translateX(100%);
-		background-color: #d9ff72;
+		background-color: #d0bfff;
 	}
 </style>
