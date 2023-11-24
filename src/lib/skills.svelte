@@ -126,13 +126,17 @@
 			<!-- Soft Skills -->
 			<div in:fly={{ x: 100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{#each technicalSkills as skill}
-					<div class="p-6 rounded shadow cursor-pointer bg-black text-white">
-						<div class="md:mb-12 mb-6 text-lime">
-							<Icon style="font-size: 24px;" icon={skill.icon} />
-						</div>
+					<div class="card-container">
+						<div class="p-6 h-full rounded shadow cursor-pointer bg-black text-white">
+							<div class="md:mb-12 mb-6 text-lime">
+								<Icon style="font-size: 24px;" icon={skill.icon} />
+							</div>
 
-						<p class="font-semibold text-xl">{skill.title}</p>
-						<p class="mt-2 align-bottom">{skill.description}</p>
+							<p class="font-semibold text-xl">{skill.title}</p>
+							<p class="mt-2 align-bottom">{skill.description}</p>
+
+							<div class="bottom-border lime" />
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -140,13 +144,17 @@
 			<!-- Technical -->
 			<div in:fly={{ x: -100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{#each softSkills as skill}
-					<div class="p-6 rounded shadow cursor-pointer bg-black text-white">
-						<div class="md:mb-12 mb-6 text-purple">
-							<Icon style="font-size: 24px;" icon={skill.icon} />
-						</div>
+					<div class="card-container">
+						<div class="p-6 h-full rounded shadow cursor-pointer bg-black text-white">
+							<div class="md:mb-12 mb-6 text-purple">
+								<Icon style="font-size: 24px;" icon={skill.icon} />
+							</div>
 
-						<p class="font-semibold text-xl">{skill.title}</p>
-						<p class="mt-2 align-bottom">{skill.description}</p>
+							<p class="font-semibold text-xl">{skill.title}</p>
+							<p class="mt-2 align-bottom">{skill.description}</p>
+
+							<div class="bottom-border purple" />
+						</div>
 					</div>
 				{/each}
 			</div>
@@ -159,5 +167,31 @@
 	input:checked ~ .dot {
 		transform: translateX(100%);
 		background-color: #d0bfff;
+	}
+
+	.card-container {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.bottom-border {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0;
+		height: 6px; /* You can adjust the height of the border */
+		transition: width 0.3s ease; /* Adjust the transition speed as needed */
+	}
+
+	.lime {
+		background-color: #d9ff72;
+	}
+
+	.purple {
+		background-color: #d0bfff;
+	}
+
+	.p-6:hover .bottom-border {
+		width: 100%;
 	}
 </style>
