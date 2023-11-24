@@ -34,7 +34,9 @@
 		});
 
 		const ag = annotationGroup([lewis, avatar, softwareDeveloper, delivering]);
-		ag.show();
+		setTimeout(() => {
+			ag.show();
+		}, 1500);
 	});
 </script>
 
