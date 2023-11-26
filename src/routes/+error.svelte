@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<main class="bg-light dark:bg-dark h-screen">
+<main class="bg-light dark:bg-dark h-96">
 	<div class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
 		<div class="mx-auto max-w-xl text-center">
 			<h1 class="text-3xl font-extrabold sm:text-7xl text-brand">
@@ -14,7 +14,7 @@
 
 			<div class="mt-8 flex flex-wrap justify-center gap-4">
 				<a
-					class="block w-full rounded bg-brand text-light px-12 py-3 text-md font-semibold shadow hover:contrast-125 focus:outline-none focus:ring sm:w-auto"
+					class="block w-full rounded bg-black text-white px-12 py-3 text-md font-semibold shadow hover:contrast-125 focus:outline-none focus:ring sm:w-auto"
 					href="/"
 				>
 					Home

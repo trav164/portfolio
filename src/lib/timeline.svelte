@@ -52,9 +52,8 @@
 		</div>
 		<!-- Content -->
 		<div class="leading-loose">
-			Worked on several projects, focused mainly on front-end development. Currently working as a
-			lead front-end software developer using Angular in tandem with the technical lead whilst also
-			upskilling in backend technologies in order become a more well-rounded developer.
+			Focus is mainly frontend development using Angular, Tailwind. Currently working as frontend
+			lead for the project.
 		</div>
 	</div>
 
