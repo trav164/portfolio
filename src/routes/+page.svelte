@@ -41,7 +41,7 @@
 </script>
 
 <svelte:head>
-	<title>Lewis Travis - Home</title>
+	<title>Lewis Travis - Fullstack Web Developer</title>
 	<meta
 		name="description"
 		content="A simple portfolio to learn new skills and expand my knowledge as a software developer."
@@ -120,7 +120,7 @@
 <section class="">
 	<div class="flex flex-col gap-6">
 		<h3 class="text-3xl font-semibold">About me</h3>
-		<p class="-mt-4 text-gray-500 italic">What I like to get up to in my spare time</p>
+		<p class="-mt-4 text-gray-500 italic">What I like to get up to in my spare time.</p>
 
 		<p class="leading-loose">
 			I'm on a mission to keep my tech skills sharp, riding the wave of the latest technological

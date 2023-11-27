@@ -36,9 +36,7 @@
 >
 	<a
 		href={link}
-		class="{dark
-			? 'text-white'
-			: ''} font-semibold text-xl lowercase flex items-center gap-2 hover:underline"
+		class="{dark ? 'text-white' : ''} font-semibold text-xl flex items-center gap-2 hover:underline"
 		>{title} <Icon style="font-size: 16px;" icon="mdi:open-in-new" /></a
 	>
 	<svg
@@ -67,7 +65,7 @@
 		out:fly={{ y: -50, duration: 500 }}
 		class="{dark ? 'bg-white' : 'bg-gray-200 text-gray-800'} -mt-6 p-6 rounded rounded-t-none"
 	>
-		<p class="text-lg leading-loose">
+		<p class="leading-loose">
 			{content}
 		</p>
 

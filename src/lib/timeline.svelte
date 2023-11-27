@@ -54,10 +54,10 @@
 		<div class="leading-loose">
 			Earned two promotions and currently serving as the Frontend Lead in an agile team. My primary
 			duties involve spearheading the team in frontend development utilizing Angular, Tailwind,
-			Playwright and Jasmine for testing. Driven by a passion for design, I've expanded my involvement
-			in user experience, routinely crafting mockups with Figma to offer clients a glimpse into the
-			rationale behind the application's aesthetics. Additionally, I extend mentorship to junior
-			members and newcomers to the company.
+			Playwright and Jasmine for testing. Driven by a passion for design, I've expanded my
+			involvement in user experience, routinely crafting mockups with Figma to offer clients a
+			glimpse into the rationale behind the application's aesthetics. Additionally, I extend
+			mentorship to junior members and newcomers to the company.
 		</div>
 	</div>
 
