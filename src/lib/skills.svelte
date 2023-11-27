@@ -108,7 +108,7 @@
 	];
 </script>
 
-<div class="flex flex-col mt-8">
+<div class="flex flex-col mt-8 text-base">
 	<div class="flex items-center justify-center w-full mb-12">
 		<label id="toggle" for="toggleB" class="flex items-center cursor-pointer">
 			<!-- label -->
