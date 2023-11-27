@@ -44,7 +44,7 @@
 		{
 			title: 'UX',
 			description:
-				'Tailoring your design with usability, and emotional impact in mind to create an experience.',
+				'Tailoring your design with usability, and emotional impact in mind to craft experiences.',
 			icon: 'mdi:design',
 			dark: false
 		},
@@ -101,7 +101,7 @@
 		},
 		{
 			title: 'Work Ethic',
-			description: 'A strong work ethic is dedicated, motivated, and committed.',
+			description: 'Dedicated, motivated, and committed.',
 			icon: 'icon-park-outline:battery-working-one',
 			dark: false
 		}

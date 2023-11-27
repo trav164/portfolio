@@ -52,8 +52,12 @@
 		</div>
 		<!-- Content -->
 		<div class="leading-loose">
-			Focus is mainly frontend development using Angular, Tailwind. Currently working as frontend
-			lead for the project.
+			Earned two promotions and currently serving as the Frontend Lead in an agile team. My primary
+			duties involve spearheading the team in frontend development utilizing Angular, Tailwind,
+			Playwright and Jasmine for testing. iven by a passion for design, I've expanded my involvement
+			in user experience, routinely crafting mockups with Figma to offer clients a glimpse into the
+			rationale behind the application's aesthetics. Additionally, I extend mentorship to junior
+			members and newcomers to the company.
 		</div>
 	</div>
 
@@ -74,9 +78,9 @@
 		</div>
 		<!-- Content -->
 		<div class="leading-loose">
-			Worked on several projects, focused mainly on front-end development. Currently working as a
-			lead front-end software developer using Angular in tandem with the technical lead whilst also
-			upskilling in backend technologies in order become a more well-rounded developer.
+			Participated in multiple projects, accumulating extensive commercial experience to enhance my
+			developer toolkit. This involved working with technologies such as NodeJS, SQL, Mongo, and
+			Docker, contributing to the creation of a middleware integration layer bridging two APIs.
 		</div>
 	</div>
 

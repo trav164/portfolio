@@ -123,21 +123,21 @@
 		<p class="-mt-4 text-gray-500 italic">What I like to get up to in my spare time</p>
 
 		<p class="leading-loose">
-			In the grand theatre of my life, golf has taken on the role of the mischievous sidekick—always
-			there, never quite behaving as expected. Picture me on the green, armed with a club and an
-			expression that oscillates between determination and sheer bewilderment. My swings have been
-			compared to interpretative dance, with the golf ball playing the elusive partner who insists
-			on a tango through the rough.
-		</p>
-		<p class="leading-loose">
-			I've taken on the role of the aspiring bass maestro—though my instrument might argue that I'm
-			more of a "bassically challenged" enthusiast.
+			I'm on a mission to keep my tech skills sharp, riding the wave of the latest technological
+			trends. I stay in the know through tech news and podcasts, making sure I'm the go-to person
+			for all things cutting-edge.
 		</p>
 
 		<p class="leading-loose">
-			So, whether I'm coaxing melodies from my bass or navigating the unpredictable dance floor of
-			the golf course, one thing is for sure—I'm on a perpetual quest for laughter, rhythm, and the
-			perfect swing.
+			Away from the screen, you'll find me chasing the ever-elusive perfect golf swing (seriously,
+			is it hiding?), I'm unleashing my inner rockstar on the bass guitar, a skill I picked up
+			during my Duke of Edinburgh adventures. And in the kitchen, I'm on a quest to prove that life
+			is too short for mediocre meals—no rubbish food here! (Or at least, I don't think my culinary
+			creations are rubbish.)
+		</p>
+
+		<p class="leading-loose">
+			If you're ready to collaborate on anything tech-related, let's connect and make things happen!
 		</p>
 	</div>
 </section>
