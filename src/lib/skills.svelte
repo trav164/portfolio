@@ -112,7 +112,13 @@
 	<div class="flex items-center justify-center w-full mb-12">
 		<label id="toggle" for="toggleB" class="flex items-center cursor-pointer">
 			<!-- label -->
-			<div class=" text-black mr-4 text-xl {isTech ? 'font-bold' : ''}">Technical</div>
+			<div
+				class=" text-black mr-4 text-xl font-bold {isTech
+					? 'underline underline-offset-4 decoration-lime'
+					: ''}"
+			>
+				Technical
+			</div>
 			<!-- toggle -->
 			<div class="relative">
 				<!-- input -->
@@ -126,10 +132,16 @@
 				<!-- line -->
 				<div class="block bg-black w-14 h-8 rounded-full" />
 				<!-- dot -->
-				<div class="dot absolute left-1 top-1 bg-[#d9ff72] w-6 h-6 rounded-full transition" />
+				<div class="dot absolute left-1 top-1 bg-lime w-6 h-6 rounded-full transition" />
 			</div>
 			<!-- label -->
-			<div class="ml-4 text-black text-xl {!isTech ? 'font-bold' : ''}">Soft</div>
+			<div
+				class="ml-4 text-black text-xl font-bold {!isTech
+					? 'underline underline-offset-4 decoration-purple'
+					: ''}"
+			>
+				Soft
+			</div>
 		</label>
 	</div>
 
