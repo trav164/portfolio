@@ -61,8 +61,8 @@
 
 {#if accordionOpen}
 	<div
-		in:fly={{ y: -50, duration: 500 }}
-		out:fly={{ y: -50, duration: 500 }}
+		in:fly|global={{ y: -50, duration: 500 }}
+		out:fly|global={{ y: -50, duration: 500 }}
 		class="{dark ? 'bg-white' : 'bg-gray-200 text-gray-800'} -mt-6 p-6 rounded rounded-t-none"
 	>
 		<p class="leading-loose">

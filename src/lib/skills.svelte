@@ -148,7 +148,7 @@
 	<div class="-mt-4">
 		{#if isTech}
 			<!-- Soft Skills -->
-			<div in:fly={{ x: 100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<div in:fly|global={{ x: 100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{#each technicalSkills as skill}
 					<div class="card-container">
 						<div class="p-6 h-full rounded shadow cursor-pointer bg-black text-white">
@@ -166,7 +166,7 @@
 			</div>
 		{:else}
 			<!-- Technical -->
-			<div in:fly={{ x: -100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<div in:fly|global={{ x: -100, duration: 500 }} class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				{#each softSkills as skill}
 					<div class="card-container">
 						<div class="p-6 h-full rounded shadow cursor-pointer bg-black text-white">
