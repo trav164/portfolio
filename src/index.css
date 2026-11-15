@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import "@fontsource-variable/montserrat";
+@import "@fontsource-variable/jetbrains-mono";
+
+@theme {
+  --color-paper: #dfdcd8;
+  --color-ink: #1e1516;
+  --color-muted: #6b6662;
+  --font-display: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+/* Lens-style colour fringe: red/blue on the top-left, yellow/cyan on the bottom-right */
+@utility chromatic {
+  text-shadow:
+    -0.012em -0.012em 0 rgb(226 72 52 / 0.85),
+    -0.03em 0 0 rgb(72 52 210 / 0.7),
+    0.025em 0 0 rgb(232 214 70 / 0.75),
+    0.015em 0.018em 0 rgb(70 200 214 / 0.8);
+}
+
+/* Progressive edge blur: stacked backdrop blurs, each masked further towards the edges */
+@utility edge-blur {
+  backdrop-filter: blur(var(--edge-blur, 4px));
+  mask-image: linear-gradient(
+    to right,
+    #000 0%,
+    transparent var(--edge-stop, 30%),
+    transparent calc(100% - var(--edge-stop, 30%)),
+    #000 100%
+  );
+}
+
+/* Film-grain overlay across the whole app */
+@utility grain {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1.4 -0.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 240px 240px;
+}

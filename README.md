@@ -1,5 +1,9 @@
-Welcome to my portfolio website! 🚀
+# portfolio
 
-Explore a collection of my diverse projects and discover the skills I've honed along the way. From web development to data analysis, each project reflects my passion for innovation and problem-solving. Connect with me through the contact page, and let's collaborate on the next big thing! 💡
+Single-page portfolio — React 19, Vite 8, Tailwind CSS 4.
 
-Remember, the journey of a thousand commits begins with a single push. Happy coding! 💻✨
+```sh
+npm install
+npm run dev      # local dev server
+npm run build    # static output in dist/
+```
