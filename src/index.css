@@ -2,12 +2,32 @@
 @import "@fontsource-variable/montserrat";
 @import "@fontsource-variable/jetbrains-mono";
 
-@theme {
-  --color-paper: #dfdcd8;
-  --color-ink: #1e1516;
-  --color-muted: #6b6662;
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  color-scheme: light;
+  --paper: #dfdcd8;
+  --ink: #1e1516;
+  --muted: #6b6662;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #151213;
+  --ink: #e8e3dd;
+  --muted: #8e8782;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
   --font-display: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+body {
+  background: var(--paper);
 }
 
 /* Lens-style colour fringe: red/blue on the top-left, yellow/cyan on the bottom-right */
@@ -19,16 +39,21 @@
     0.015em 0.018em 0 rgb(70 200 214 / 0.8);
 }
 
-/* Progressive edge blur: stacked backdrop blurs, each masked further towards the edges */
+/* Progressive edge blur: stacked backdrop blurs, each masked further towards the edges.
+   The vertical gradient softens the top/bottom so the layer's box never shows. */
 @utility edge-blur {
-  backdrop-filter: blur(var(--edge-blur, 4px));
-  mask-image: linear-gradient(
-    to right,
-    #000 0%,
-    transparent var(--edge-stop, 30%),
-    transparent calc(100% - var(--edge-stop, 30%)),
-    #000 100%
-  );
+  -webkit-backdrop-filter: blur(var(--edge-blur, 0.02em));
+  backdrop-filter: blur(var(--edge-blur, 0.02em));
+  mask-image:
+    linear-gradient(
+      to right,
+      #000 0%,
+      transparent var(--edge-stop, 30%),
+      transparent calc(100% - var(--edge-stop, 30%)),
+      #000 100%
+    ),
+    linear-gradient(to bottom, transparent 0, #000 0.15em, #000 calc(100% - 0.15em), transparent 100%);
+  mask-composite: intersect;
 }
 
 /* Film-grain overlay across the whole app */
