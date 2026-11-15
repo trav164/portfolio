@@ -19,7 +19,9 @@ export default function App() {
   const next = theme === "dark" ? "light" : "dark";
 
   return (
-    <main className="relative flex min-h-svh flex-col items-center justify-center overflow-hidden bg-paper px-4 text-ink transition-colors duration-500">
+    <main className="relative isolate flex min-h-svh flex-col items-center justify-center overflow-hidden bg-paper px-4 text-ink transition-colors duration-500">
+      <div aria-hidden="true" className="vignette pointer-events-none absolute inset-0 -z-10" />
+
       <button
         type="button"
         onClick={toggle}
@@ -31,6 +33,10 @@ export default function App() {
       </button>
 
       <div className="relative text-[clamp(4rem,21vw,22rem)] leading-none">
+        <div
+          aria-hidden="true"
+          className="glow pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[3em] w-[6em] -translate-1/2 motion-safe:animate-glow"
+        />
         <h1 className="chromatic select-none font-display font-black tracking-tight uppercase blur-[0.0066em]">
           Lewis
         </h1>

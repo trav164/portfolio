@@ -9,6 +9,11 @@
   --paper: #dfdcd8;
   --ink: #1e1516;
   --muted: #6b6662;
+  /* Halo behind the wordmark + edge vignette */
+  --glow: rgb(255 252 246 / 0.95);
+  --glow-warm: rgb(255 196 170 / 0.45);
+  --glow-cool: rgb(170 222 230 / 0.4);
+  --vignette: rgb(70 52 46 / 0.22);
 }
 
 :root[data-theme="dark"] {
@@ -16,6 +21,10 @@
   --paper: #151213;
   --ink: #e8e3dd;
   --muted: #8e8782;
+  --glow: rgb(255 238 220 / 0.13);
+  --glow-warm: rgb(232 92 70 / 0.14);
+  --glow-cool: rgb(70 190 214 / 0.12);
+  --vignette: rgb(0 0 0 / 0.55);
 }
 
 @theme inline {
@@ -24,6 +33,32 @@
   --color-muted: var(--muted);
   --font-display: "Montserrat Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+  --animate-glow: glow-breathe 9s ease-in-out infinite;
+
+  @keyframes glow-breathe {
+    0%,
+    100% {
+      opacity: 0.8;
+      scale: 1;
+    }
+    50% {
+      opacity: 1;
+      scale: 1.06;
+    }
+  }
+}
+
+/* Light emitting from behind the wordmark: neutral core with warm/cool tints off-centre */
+@utility glow {
+  background:
+    radial-gradient(closest-side at 38% 56%, var(--glow-warm), transparent),
+    radial-gradient(closest-side at 62% 44%, var(--glow-cool), transparent),
+    radial-gradient(closest-side, var(--glow), transparent);
+  filter: blur(0.12em);
+}
+
+@utility vignette {
+  background: radial-gradient(ellipse at center, transparent 45%, var(--vignette) 100%);
 }
 
 body {
