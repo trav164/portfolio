@@ -4,6 +4,7 @@ import { useTheme } from "./useTheme";
 const links = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/lewis-travis-43656ab5/" },
   { label: "GitHub", href: "https://github.com/trav164" },
+  { label: "Email", href: "mailto:hello@lewistravis.co.uk" },
 ];
 
 // Progressive edge blur: each layer is stronger but reaches less far in from the edges.
@@ -61,8 +62,7 @@ export default function App() {
           <a
             key={label}
             href={href}
-            target="_blank"
-            rel="noreferrer"
+            {...(href.startsWith("http") && { target: "_blank", rel: "noreferrer" })}
             className="border-b border-ink pb-1 font-mono text-sm tracking-[0.2em] uppercase transition-opacity hover:opacity-60 sm:text-lg"
           >
             {label} <span aria-hidden="true">↗</span>
