@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
 import { useTheme } from "./useTheme";
+import Work from "./Work";
 
 const links = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/lewis-travis-43656ab5/" },
@@ -20,8 +21,8 @@ export default function App() {
   const next = theme === "dark" ? "light" : "dark";
 
   return (
-    <main className="relative isolate flex min-h-svh flex-col items-center justify-center overflow-hidden bg-paper px-4 text-ink transition-colors duration-500">
-      <div aria-hidden="true" className="vignette pointer-events-none absolute inset-0 -z-10" />
+    <main className="relative isolate flex min-h-svh flex-col items-center overflow-x-clip bg-paper px-4 pt-28 pb-12 text-ink transition-colors duration-500 sm:px-8 sm:pt-36">
+      <div aria-hidden="true" className="vignette pointer-events-none fixed inset-0 -z-10" />
 
       <button
         type="button"
@@ -57,18 +58,24 @@ export default function App() {
         <span className="mt-2 block sm:mt-0 sm:inline">Retford, UK</span>
       </p>
 
-      <nav className="mt-12 flex gap-10 sm:mt-16 sm:gap-12">
+      <nav className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-4 sm:mt-16 sm:gap-12">
         {links.map(({ label, href }) => (
           <a
             key={label}
             href={href}
             {...(href.startsWith("http") && { target: "_blank", rel: "noreferrer" })}
-            className="border-b border-ink pb-1 font-mono text-sm tracking-[0.2em] uppercase transition-opacity hover:opacity-60 sm:text-lg"
+            className="border-b border-ink pb-1 font-mono whitespace-nowrap text-sm tracking-[0.2em] uppercase transition-opacity hover:opacity-60 sm:text-lg"
           >
             {label} <span aria-hidden="true">↗</span>
           </a>
         ))}
       </nav>
+
+      <Work />
+
+      <footer className="mt-24 font-mono text-xs tracking-[0.3em] text-muted uppercase sm:mt-32">
+        © Lewis Travis
+      </footer>
 
       <div
         aria-hidden="true"
